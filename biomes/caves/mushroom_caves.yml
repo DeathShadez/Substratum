@@ -1,0 +1,17 @@
+id: MUSHROOM_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/colors.yml:MUSHROOM_CAVES
+
+palette:
+  - MUSHROOM_CAVES: 314
+  - MUSHROOM_CAVES_DEEPSLATE: $meta.yml:strata.deepslate.top
+  - << meta.yml:palette-bedrock
+
+features:
+  trees:
+    - MUSHROOM_DISK_PATCHES
+    - LARGE_MUSHROOMS
+  flora:
+    - SMALL_MUSHROOMS

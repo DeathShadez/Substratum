@@ -1,0 +1,29 @@
+id: BASE
+type: BIOME
+abstract: true
+extends:
+  - DEPOSITS_DEFAULT
+  - ORES_DEFAULT
+
+colors:
+  fog: 0x000000
+  sky: 0x000000
+
+slant-depth: 15
+
+features:
+  global-preprocessors:
+    - LAVA_FLOOR
+    - UNDERGROUND_LAVA_COLUMNS
+    - CONTAIN_FLOATING_WATER
+    - CAVE_GLOW_LICHEN
+    - TEXTURED_STONE_SLANT
+  underwater-flora:
+    - KELP
+    - SEAGRASS
+
+palette:
+  - << meta.yml:palette-top
+  - GRASS_STONE: 308
+  - << meta.yml:palette-bottom
+

@@ -1,0 +1,15 @@
+id: ICE_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/colors.yml:ICE_CAVES
+
+palette:
+  - ICE_CAVES: 319
+  - ICE_CAVES_DEEPSLATE: $meta.yml:strata.deepslate.top
+  - << meta.yml:palette-bedrock
+
+features:
+  preprocessors:
+    - ICE_CAVE_POOLS
+    - CEILING_ICICLES

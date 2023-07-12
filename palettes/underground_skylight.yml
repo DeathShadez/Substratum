@@ -1,0 +1,11 @@
+id: UNDERGROUND_SKYLIGHT
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:pearlescent_froglight: 1
+      - minecraft:black_concrete: 30
+    layers: 1
+    sampler:
+      type: WHITE_NOISE
+      salt: 8787

@@ -1,0 +1,14 @@
+id: WEBBED_CAVES
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:gravel: 2
+      - minecraft:andesite: 3
+      - minecraft:stone: 5
+      - minecraft:black_concrete_powder: 2
+      - minecraft:black_concrete: 1
+    layers: 1
+sampler:
+  type: WHITE_NOISE
+  salt: 3336

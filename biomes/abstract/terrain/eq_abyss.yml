@@ -1,0 +1,24 @@
+id: EQ_VALLEY
+type: BIOME
+abstract: true
+
+vars: &variables
+  topbase: 313
+  base: 70
+  height: 10
+
+terrain:
+  sampler:
+    type: EXPRESSION
+    dimensions: 3
+    variables: *variables
+    expression: |
+      if(y > topbase, y,
+        if(y < topbase, -y + base , -1
+        )
+      )
+  sampler-2d:
+    dimensions: 2
+    type: EXPRESSION
+    variables: *variables
+    expression: "(simplex(x, z)+5)/1.7 * height"

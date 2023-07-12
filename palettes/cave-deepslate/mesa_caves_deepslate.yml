@@ -1,0 +1,42 @@
+id: MESA_CAVES_DEEPSLATE
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:red_sand: 7
+      - minecraft:terracotta: 4
+      - minecraft:white_terracotta: 1
+      - minecraft:deepslate: 12
+    layers: 2
+    sampler:
+     dimensions: 2
+     type: DOMAIN_WARP
+     amplitude: 4
+     warp:
+       type: OPEN_SIMPLEX_2
+       frequency: 0.1
+     sampler:
+       type: CELLULAR
+       return: CellValue
+       frequency: 0.08
+  - materials:
+      - minecraft:red_sand: 7
+      - minecraft:terracotta: 4
+      - minecraft:white_terracotta: 1
+      - minecraft:deepslate: 17
+    layers: 1
+    sampler:
+    type: WHITE_NOISE
+    amplitude: 1
+    warp:
+      type: "OPEN_SIMPLEX_2"
+      frequency: 0.9
+    sampler:
+      type: FBM
+      octaves: 2
+      sampler:
+        type: "CELLULAR"
+        return: "CellValue"
+        frequency: 0.5
+        salt: 9345
+

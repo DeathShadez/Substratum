@@ -1,0 +1,30 @@
+id: MAGMA_CAVES_DEEPSLATE
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:magma_block: 1
+      - minecraft:red_concrete: 6
+      - minecraft:red_terracotta: 4
+      - minecraft:blackstone: 1
+      - minecraft:deepslate: 5
+    layers: 2
+  - materials:
+      - minecraft:magma_block: 1
+      - minecraft:red_concrete: 6
+      - minecraft:red_terracotta: 4
+      - minecraft:blackstone: 1
+      - minecraft:deepslate: 10
+    layers: 1
+
+sampler:
+  dimensions: 2
+  type: DOMAIN_WARP
+  amplitude: 4
+  warp:
+    type: OPEN_SIMPLEX_2
+    frequency: 0.1
+  sampler:
+    type: CELLULAR
+    return: CellValue
+    frequency: 0.5

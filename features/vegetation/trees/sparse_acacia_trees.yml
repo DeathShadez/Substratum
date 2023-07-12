@@ -1,0 +1,17 @@
+id: SPARSE_ACACIA_TREES
+type: FEATURE
+extends: ACACIA_TREES
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 2349
+  threshold: 0.0005
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    - acacia_tree_procedural: 4
+    - large_flat_acacia_tree_procedural: 1

@@ -1,0 +1,14 @@
+id: MAGMA_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/colors.yml:MAGMA_CAVES
+
+palette:
+  - MAGMA_CAVES: 319
+  - MAGMA_CAVES_DEEPSLATE: $meta.yml:strata.deepslate.top
+  - << meta.yml:palette-bedrock
+
+features:
+  preprocessors:
+    - MAGMA_CAVE_LAVA_POOLS

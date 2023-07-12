@@ -1,0 +1,9 @@
+id: MOSSY_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/colors.yml:MOSSY_CAVES
+
+palette:
+  - MOSSY_CAVES: 319
+  - << meta.yml:palette-bedrock

@@ -1,0 +1,30 @@
+id: AMETHYST_CAVES_DEEPSLATE
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:magenta_concrete: 2
+      - minecraft:magenta_concrete_powder: 3
+      - minecraft:purple_concrete_powder: 4
+      - minecraft:purple_concrete: 3
+      - minecraft:amethyst_block: 1
+      - minecraft:deepslate: 5
+    layers: 2
+  - materials:
+      - minecraft:purple_concrete_powder: 4
+      - minecraft:purple_concrete: 3
+      - minecraft:amethyst_block: 1
+      - minecraft:deepslate: 10
+    layers: 2
+
+sampler:
+  dimensions: 2
+  type: DOMAIN_WARP
+  amplitude: 4
+  warp:
+    type: OPEN_SIMPLEX_2
+    frequency: 0.1
+  sampler:
+    type: CELLULAR
+    return: CellValue
+    frequency: 0.08

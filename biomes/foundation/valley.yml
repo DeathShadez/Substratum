@@ -1,0 +1,17 @@
+id: VALLEY
+type: BIOME
+extends: [ EQ_VALLEY, CARVING_LAND, BASE ]
+vanilla: minecraft:windswept_hills
+color: $biomes/colors.yml:VALLEY
+            
+colors:
+  grass: 0x91bd59
+  foliage: 0x77ab2f
+  water: 0x44aff5
+  water-fog: 0x44aff5
+
+features:
+  flora:
+    - GRASS
+  landforms:
+    - SMALL_MOSSY_BOULDER_PATCHES

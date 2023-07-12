@@ -1,0 +1,12 @@
+id: MOSSY_CAVES
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:mossy_cobblestone: 1
+      - minecraft:cobblestone: 2
+      - minecraft:stone: 4
+    layers: 1
+    sampler:
+      type: WHITE_NOISE
+      salt: 5678

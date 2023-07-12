@@ -1,0 +1,36 @@
+id: MESQUITE_TREES
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 20
+  padding: 2
+  salt: 7732
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 64
+        max: 255
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks: $features/vegetation/meta.yml:plantable-blocks
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: mesquite_tree_procedural
+  

@@ -1,0 +1,9 @@
+id: TERRACOTTA_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/colors.yml:TERRACOTTA_CAVES
+
+palette:
+  - TERRACOTTA_CAVES: 319
+  - << meta.yml:palette-bedrock

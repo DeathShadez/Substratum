@@ -1,0 +1,19 @@
+id: GROVE_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/colors.yml:GROVE_CAVES
+
+palette:
+  - GROVE_CAVES: 319
+  - GROVE_CAVES_DEEPSLATE: $meta.yml:strata.deepslate.top
+  - << meta.yml:palette-bedrock
+
+features:
+  flora:
+    - GRASS
+    - LARGE_LEAF_VINES_UNDERGROUND
+  trees:
+    - OAK_BUSH_PATCHES
+  landforms:
+    - SMALL_MOSSY_BOULDER_PATCHES
