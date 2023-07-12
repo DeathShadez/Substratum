@@ -15,11 +15,11 @@ Might spawn players at the top bedrock layer when used for multiverse custom wor
 ## INSTALLATION
 Follow this [installation guide](https://terra.polydev.org/install/index.html) for your particular platform.
 
-#### Bukkit.yml Quick Reference 
-##### Replace "world_name" with the name of your world
+#### Bukkit.yml Quick Reference For Overworld
+##### For custom worlds, replace "world" with your custom world name
 ```
 worlds:
-  world_name:
+  world:
     generator: Terra:SUBSTRATUM
 ```
 ##### More than One Config Pack for Multiple Worlds 
