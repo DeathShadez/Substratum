@@ -21,6 +21,58 @@ locator:
       pattern:
         type: MATCH_AIR
         offset: 0
+    - type: OR
+      locators:
+        - type: PATTERN
+          range: *range
+          pattern:
+            type: MATCH_SOLID
+            offset: -5
+        - type: PATTERN
+          range: *range
+          pattern:
+            type: MATCH_SOLID
+            offset: -4
+        - type: PATTERN
+          range: *range
+          pattern:
+            type: MATCH_SOLID
+            offset: -3
+        - type: PATTERN
+          range: *range
+          pattern:
+            type: MATCH_SOLID
+            offset: -2
+        - type: PATTERN
+          range: *range
+          pattern:
+            type: MATCH_SOLID
+            offset: -1
+        - type: PATTERN
+          range: *range
+          pattern:
+            type: MATCH_SOLID
+            offset: 1
+        - type: PATTERN
+          range: *range
+          pattern:
+            type: MATCH_SOLID
+            offset: 2
+        - type: PATTERN
+          range: *range
+          pattern:
+            type: MATCH_SOLID
+            offset: 3
+        - type: PATTERN
+          range: *range
+          pattern:
+            type: MATCH_SOLID
+            offset: 4
+        - type: PATTERN
+          range: *range
+          pattern:
+            type: MATCH_SOLID
+            offset: 5
 
     # Match ridged simplex to create 'walls'
     - type: SAMPLER_3D
