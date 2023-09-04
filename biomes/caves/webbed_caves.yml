@@ -12,3 +12,4 @@ palette:
 features:
   preprocessors:
     - HANGING_COBWEBS
+    - BIG_COBWEBS
