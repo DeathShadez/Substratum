@@ -6,7 +6,7 @@ layers:
       - minecraft:sand: 16
       - minecraft:sandstone: 4
       - minecraft:smooth_sandstone: 1
-      - minecraft:stone: 12
+      - minecraft:stone: 8
     layers: 2
     sampler:
      dimensions: 2
