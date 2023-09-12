@@ -1,0 +1,39 @@
+id: HONEY_CAVES
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:moss_block: 2
+      - minecraft:yellow_terracotta: 2
+      - minecraft:yellow_concrete: 3
+      - minecraft:honeycomb_block: 1
+      - minecraft:yellow_terracotta: 2
+    layers: 2
+    sampler:
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 4
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.1
+      sampler:
+        type: CELLULAR
+        return: CellValue
+        frequency: 0.08 
+  - materials:
+      - minecraft:stone: 4
+      - minecraft:yellow_terracotta: 2
+      - minecraft:yellow_concrete: 3
+      - minecraft:honeycomb_block: 1
+    layers: 1
+    sampler:
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 4
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.1
+      sampler:
+        type: CELLULAR
+        return: CellValue
+        frequency: 0.3

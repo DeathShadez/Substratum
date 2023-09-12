@@ -201,3 +201,10 @@ blueice:
   range:
     min: 40
     max: 65
+
+honeycomb:
+  averageCountPerChunk: 7
+  salt: 3156
+  range:
+    min: -32
+    max: 160

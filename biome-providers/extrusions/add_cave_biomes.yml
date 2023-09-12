@@ -20,6 +20,8 @@ extrusions:
       - AMETHYST_CAVES: 1
       - WEBBED_CAVES: 1
       - ICE_CAVES: 1
+      - HONEY_CAVES: 1
+      - MUSHROOM_CAVES: 1
     range:
       min: -16
       max: 60
