@@ -1,0 +1,52 @@
+id: MINESHAFT_ELEVATORS
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 30
+  padding: 80
+  salt: 2222
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range: &range
+        min: 80
+        max: 150
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 2
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 4
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 6
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SOLID
+        offset: -1
+    - type: ADJACENT_PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SOLID
+        offset: -1
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: 
+    - mineshaft_elevator: 1
+    - blank: 10

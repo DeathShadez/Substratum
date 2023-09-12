@@ -1,0 +1,4 @@
+num random = randomInt(2);
+
+if (random == 0) structure(0,0,0,"mineshaft_elevator_between_1","NONE");
+if (random == 1) structure(0,0,0,"mineshaft_elevator_between_2","NONE");

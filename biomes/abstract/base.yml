@@ -21,6 +21,9 @@ features:
   underwater-flora:
     - KELP
     - SEAGRASS
+  structures:
+    - SPAWNER_DUNGEONS_NORMAL
+    - MINESHAFT_ELEVATORS
 
 palette:
   - << meta.yml:palette-top
