@@ -24,4 +24,4 @@ extrusions:
       - MUSHROOM_CAVES: 1
     range:
       min: -16
-      max: 60
+      max: 300

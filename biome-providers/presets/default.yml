@@ -13,7 +13,7 @@ biomes:
         type: GAUSSIAN
     pipeline:
 
-      # Default Surface Source
+      # Caves Up to the Top of the World
       source: $biome-providers/sources/substratum.yml:source
 
       stages: 

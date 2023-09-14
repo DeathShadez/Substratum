@@ -1,10 +1,7 @@
 source:
   type: SAMPLER
   biomes:
-    - FLAT: 2
-    - VALLEY: 3
-    - BUMPY: 6
-    - MOUNTAINS: 2
+    - FLAT: 1
   sampler:
     dimensions: 2
     type: LINEAR
