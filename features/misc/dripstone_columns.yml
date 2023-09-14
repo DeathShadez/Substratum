@@ -13,7 +13,7 @@ locator:
     - type: SURFACE
       range: &range
         min: -50
-        max: 64
+        max: 319
     - type: SAMPLER_3D
       sampler:
         type: EXPRESSION
