@@ -13,7 +13,6 @@ colors:
   water: 0x44aff5
   water-fog: 0x44aff5
 
-
 features:
   flora:
     - GRASS

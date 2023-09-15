@@ -23,10 +23,9 @@ features:
     - SEAGRASS
   structures:
     - SPAWNER_DUNGEONS_NORMAL
-    - MINESHAFT_ELEVATORS
 
 palette:
   - << meta.yml:palette-top
-  - GRASS_STONE: 308
+  - GRASS_STONE: 316
   - << meta.yml:palette-bottom
 

@@ -78,7 +78,6 @@ strata: # Controls global Y level ranges of strata
 
 palette-top: # Added to the top of every palette
   - BLOCK:minecraft:bedrock: $meta.yml:strata.bedrock-top.top
-  - UNDERGROUND_SKYLIGHT: $meta.yml:strata.bedrock-top.bottom
 
 palette-bottom: # Added to the bottom of every palette
   - DEEPSLATE: $meta.yml:strata.deepslate.top
