@@ -1,0 +1,13 @@
+if (getBlock(5,0,0) == "minecraft:air" ||
+getBlock(-5,0,0) == "minecraft:air" ||
+getBlock(0,0,5) == "minecraft:air" ||
+getBlock(0,0,-5) == "minecraft:air") {
+    fail;
+}
+
+structure(0,0,0,"spawner_dungeon_desert_sc","NONE");
+
+num random = randomInt(3);
+if (random == 0) state(0, 3, 0,"type=HUSK");
+if (random == 1) state(0, 3, 0,"type=SKELETON");
+if (random == 2) state(0, 3, 0,"type=SPIDER");
