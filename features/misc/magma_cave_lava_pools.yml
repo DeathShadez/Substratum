@@ -34,8 +34,13 @@ locator:
       pattern:
         type: OR
         patterns:
-          - type: MATCH
-            block: minecraft:stone
+          - type: MATCH_SET
+            blocks: 
+              - minecraft:stone
+              - minecraft:red_concrete
+              - minecraft:red_terracotta
+              - minecraft:blackstone
+              - minecraft:magma_block
             offset: 0
           - type: MATCH
             block: minecraft:water
