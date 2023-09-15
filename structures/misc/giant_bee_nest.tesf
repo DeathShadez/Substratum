@@ -20,7 +20,11 @@ for (num y = -30; y < 30; y = y + 1) {
     }
 }
 
-entity(4, 0, 0, "minecraft:bee");
-entity(0, 0, 4, "minecraft:bee");
-entity(-4, 0, 0, "minecraft:bee");
+for (num i = -5; i <= 5; i = i + 10) {
+    if (getBlock(i,0,0) == "minecraft:air") entity(i, 0, 0, "minecraft:bee");
+    if (getBlock(0,0,i) == "minecraft:air") entity(0, 0, i, "minecraft:bee");
+    if (getBlock(i,0,i) == "minecraft:air") entity(i, 0, i, "minecraft:bee");
+}   
+
+
 
