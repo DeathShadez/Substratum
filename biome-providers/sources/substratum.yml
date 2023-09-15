@@ -1,7 +1,7 @@
 source:
   type: SAMPLER
   biomes:
-    - FLAT: 1
+    - CAVES: 1
   sampler:
     dimensions: 2
     type: LINEAR
