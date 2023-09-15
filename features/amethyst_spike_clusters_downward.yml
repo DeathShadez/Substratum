@@ -14,7 +14,7 @@ locator:
     - type: PATTERN
       range: &range
         min: 5
-        max: 255
+        max: 280
       pattern:
         type: MATCH_SOLID
         offset: 1
