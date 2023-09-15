@@ -8,6 +8,7 @@ layers:
       - minecraft:yellow_concrete: 3
       - minecraft:honeycomb_block: 1
       - minecraft:yellow_terracotta: 2
+      - minecraft:stone: 2
     layers: 2
     sampler:
       dimensions: 2

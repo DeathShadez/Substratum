@@ -6,6 +6,7 @@ layers:
       - minecraft:mycelium: 8
       - minecraft:coarse_dirt: 4
       - minecraft:gravel: 3
+      - minecraft:stone: 5
     layers: 2
   - materials:
       - minecraft:stone: 2

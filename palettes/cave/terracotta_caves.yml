@@ -4,20 +4,35 @@ type: PALETTE
 layers:
   - materials:
       - minecraft:red_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:blue_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:green_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:yellow_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:black_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:purple_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:gray_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:light_gray_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:magenta_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:white_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:orange_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:lime_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:light_blue_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:pink_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:brown_terracotta: 1
+      - minecraft:stone: 1
       - minecraft:cyan_terracotta: 1
       - minecraft:stone: 1
     layers: 1

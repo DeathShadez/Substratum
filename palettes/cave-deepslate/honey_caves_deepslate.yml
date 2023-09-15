@@ -3,11 +3,11 @@ type: PALETTE
 
 layers:
   - materials:
-      - minecraft:deepslate: 4
+      - minecraft:deepslate: 7
       - minecraft:yellow_terracotta: 2
       - minecraft:yellow_concrete: 3
       - minecraft:yellow_terracotta: 2
-      - minecraft:deepslate: 4
+      - minecraft:deepslate: 7
     layers: 2
     sampler:
       dimensions: 2

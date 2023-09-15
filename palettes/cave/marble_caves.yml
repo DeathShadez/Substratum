@@ -6,7 +6,7 @@ layers:
       - minecraft:white_concrete: 5
       - minecraft:white_concrete_powder: 5
       - minecraft:calcite: 5
-      - minecraft:stone: 3
+      - minecraft:stone: 15
     layers: 1
 sampler:
   type: WHITE_NOISE
