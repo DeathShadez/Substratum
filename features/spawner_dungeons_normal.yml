@@ -12,7 +12,7 @@ locator:
   locators:
     - type: RANDOM
       height: &range
-        min: 75
+        min: 20
         max: 255
       amount: 1
     - type: PATTERN
