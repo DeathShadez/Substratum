@@ -13,7 +13,8 @@ As of Terra version 6.2, there is no easy way to set generators on the Fabric an
 Due to this, the only platform that you can easily use this pack on is the Bukkit version.  Please keep this in mind before creating issues related to the Fabric or Forge platforms.
 
 ## POSSIBLE ISSUES
-Might spawn players at the top bedrock layer when used for multiverse custom worlds
+- Might spawn players at the top bedrock layer depending how on world is generated
+- Players might spawn and suffocate upon initial spawn
 
 ## INSTALLATION
 Follow this [installation guide](https://terra.polydev.org/install/index.html) for your particular platform.
