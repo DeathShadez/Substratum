@@ -12,3 +12,5 @@ palette:
 features:
   preprocessors:
     - MAGMA_CAVE_LAVA_POOLS
+    - LAVA_COLUMNS
+  
