@@ -10,7 +10,7 @@ else if(coralRand == 3) blockID = "minecraft:fire_coral";
 else if(coralRand == 4) blockID = "minecraft:horn_coral";
 
 // If block is not in water, fail
-if (getBlock(0, 1, 0) != "minecraft:water") fail;
+if (getBlock(0, 0, 0) != "minecraft:water") fail;
 
 // Place coral
 block(0, 0, 0, blockID);

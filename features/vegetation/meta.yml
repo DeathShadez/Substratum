@@ -11,6 +11,9 @@ aquatic-plantable-blocks:
   - minecraft:mud
   - minecraft:sand
   - minecraft:gravel
+  - minecraft:blue_concrete
+  - minecraft:blue_concrete_powder
+  - minecraft:blue_terracotta
 
 sugarcane-plantable-blocks:
   - minecraft:mud

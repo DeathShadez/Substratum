@@ -12,7 +12,7 @@ locator:
   type: PATTERN
   range:
     min: 0
-    max: 60
+    max: 280
   pattern:
     type: AND
     patterns:
@@ -33,6 +33,4 @@ structures:
       type: OPEN_SIMPLEX_2
       frequency: 0.04
     salt: 4201
-  structures:
-    - coral_fans: 2
-    - blank: 6
+  structures: coral_fans

@@ -1,0 +1,28 @@
+id: WATER_CAVES
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:blue_concrete: 2
+      - minecraft:blue_concrete_powder: 1
+      - minecraft:blue_terracotta: 1
+      - minecraft:stone: 5
+    layers: 2
+  - materials:
+      - minecraft:blue_concrete: 2
+      - minecraft:blue_concrete_powder: 1
+      - minecraft:blue_terracotta: 1
+      - minecraft:stone: 10
+    layers: 2
+
+sampler:
+  dimensions: 2
+  type: DOMAIN_WARP
+  amplitude: 4
+  warp:
+    type: OPEN_SIMPLEX_2
+    frequency: 0.1
+  sampler:
+    type: CELLULAR
+    return: CellValue
+    frequency: 0.5

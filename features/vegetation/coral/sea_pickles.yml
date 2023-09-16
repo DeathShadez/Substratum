@@ -1,18 +1,18 @@
-id: CORAL_PLANTS
+id: SEA_PICKLES
 type: FEATURE
 
 distributor:
   type: SAMPLER
   sampler:
     type: POSITIVE_WHITE_NOISE
-    salt: 6485
+    salt: 1596
   threshold: 0.8
 
 locator:
   type: PATTERN
   range:
     min: 0
-    max: 60
+    max: 280
   pattern:
     type: AND
     patterns:
@@ -32,5 +32,5 @@ structures:
     sampler:
       type: OPEN_SIMPLEX_2
       frequency: 0.04
-    salt: 6922
-  structures: coral_plants
+    salt: 1232
+  structures: sea_pickle

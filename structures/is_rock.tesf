@@ -22,6 +22,15 @@ if (blockID != "minecraft:stone" &&
     blockID != "minecraft:deepslate_redstone_ore" &&
     blockID != "minecraft:deepslate_emerald_ore" &&
     blockID != "minecraft:deepslate_lapis_ore" &&
-    blockID != "minecraft:deepslate_diamond_ore") {
+    blockID != "minecraft:deepslate_diamond_ore" &&
+    // magma caves
+    blockID != "minecraft:magma_block" && 
+    blockID != "minecraft:red_concrete" &&
+    blockID != "minecraft:red_terracotta" && 
+    blockID != "minecraft:blackstone" &&
+    // water caves
+    blockID != "minecraft:blue_concrete" && 
+    blockID != "minecraft:blue_concrete_powder" &&
+    blockID != "minecraft:blue_terracotta" ) {
     fail;
 }

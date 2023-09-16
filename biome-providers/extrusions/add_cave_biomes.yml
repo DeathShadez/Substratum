@@ -22,6 +22,7 @@ extrusions:
       - ICE_CAVES: 1
       - HONEY_CAVES: 1
       - MUSHROOM_CAVES: 1
+      - WATER_CAVES: 1
     range:
       min: -16
       max: 300
