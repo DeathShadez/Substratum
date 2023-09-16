@@ -6,7 +6,7 @@ layers:
       - minecraft:snow_block: 7
       - minecraft:packed_ice: 6
       - minecraft:blue_ice: 1
-      - minecraft:stone: 6
+      - minecraft:stone: 12
     layers: 2
     sampler:
      dimensions: 2
@@ -23,7 +23,7 @@ layers:
       - minecraft:snow_block: 7
       - minecraft:packed_ice: 6
       - minecraft:blue_ice: 1
-      - minecraft:stone: 9
+      - minecraft:stone: 15
     layers: 1
     sampler:
     type: WHITE_NOISE

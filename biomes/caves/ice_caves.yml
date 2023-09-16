@@ -11,5 +11,4 @@ palette:
 
 features:
   preprocessors:
-    - ICE_CAVE_POOLS
     - CEILING_ICICLES
