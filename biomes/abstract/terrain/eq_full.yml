@@ -1,8 +1,0 @@
-id: EQ_CAVES
-type: BIOME
-abstract: true
-
-terrain:
-  sampler:
-    type: LINEAR_HEIGHTMAP
-    base: 319
