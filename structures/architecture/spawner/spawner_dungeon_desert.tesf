@@ -6,6 +6,10 @@ getBlock(0,0,-5) == "minecraft:air") {
 }
 
 structure(0,0,0,"spawner_dungeon_desert_sc","NONE");
+// loot(-1, 1, 0, "dungeon.json");
+// loot(1, 1, 0, "dungeon.json");
+// loot(0, 1, -1, "dungeon.json");
+// loot(0, 1, 1, "dungeon.json");
 
 num random = randomInt(3);
 if (random == 0) state(0, 3, 0,"type=HUSK");

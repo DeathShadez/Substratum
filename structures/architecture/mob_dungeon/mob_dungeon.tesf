@@ -1,0 +1,38 @@
+// Number of floors for rooms to generate
+num y = 0;
+
+num floors = 3+randomInt(3);
+
+num betweenFloor = 8;
+
+num roomSpawnChance = 1;
+
+structure(0,0,0,"mob_dungeon_top","NONE");
+
+for (num f = 1; f < floors+1; f = f + 1) {
+    y = y - betweenFloor;
+    structure(0,y,0,"mob_dungeon_connector","NONE");
+
+    // randomizes rooms in each direction 
+
+    // south
+    if (randomInt(roomSpawnChance) == 0) {
+        structure(0,y,13,"mob_dungeon_random_south","NONE");
+    }
+
+    // north
+    if (randomInt(roomSpawnChance) == 0) {
+         structure(0,y,-13,"mob_dungeon_random_north","NONE");
+    }
+
+    // west
+    if (randomInt(roomSpawnChance) == 0) {
+        structure(-13,y,0,"mob_dungeon_random_west","NONE");
+    }
+
+    // east
+    if (randomInt(roomSpawnChance) == 0) {
+        structure(13,y,0,"mob_dungeon_random_east","NONE");
+    }
+
+}
