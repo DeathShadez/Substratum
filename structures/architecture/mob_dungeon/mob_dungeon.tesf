@@ -5,6 +5,8 @@ num floors = 3+randomInt(3);
 
 num betweenFloor = 8;
 
+if (getBlock(0,-betweenFloor*floors,0) == "minecraft:air") fail;
+
 num roomWidth = 11;
 
 num roomSpawnChance = 1;
