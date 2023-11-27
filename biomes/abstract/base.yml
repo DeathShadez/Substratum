@@ -23,6 +23,7 @@ features:
     - SEAGRASS
   structures:
     - SPAWNER_DUNGEONS_NORMAL
+    - MOB_DUNGEONS
 
 palette:
   - << meta.yml:palette-top
