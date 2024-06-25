@@ -1,4 +1,4 @@
-id: MAGMA_CAVE_LAVA_POOLS
+id: WATER_POOLS
 type: FEATURE
 
 distributor:
@@ -37,10 +37,9 @@ locator:
           - type: MATCH_SET
             blocks: 
               - minecraft:stone
-              - minecraft:red_concrete
-              - minecraft:red_terracotta
-              - minecraft:blackstone
-              - minecraft:magma_block
+              - minecraft:blue_concrete
+              - minecraft:blue_terracotta
+              - minecraft:blue_concrete_powder
             offset: 0
           - type: MATCH
             block: minecraft:water
@@ -56,6 +55,6 @@ structures:
     salt: 4219
     frequency: 0.01
   structures:
-    - BLOCK:minecraft:lava: 15
+    - BLOCK:minecraft:water: 15
     - blank: 1
   
