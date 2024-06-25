@@ -11,7 +11,7 @@ palette:
 
 features:
   preprocessors:
-    - WATER_CAVE_POOLS
+    - WATER_POOLS
     - WATER_COLUMNS
   flora:
     - CORAL_FANS
