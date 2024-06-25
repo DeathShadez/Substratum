@@ -1,0 +1,16 @@
+id: DESERT_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/substratum_cave_colors.yml:DESERT_CAVES
+
+palette:
+  - DESERT_CAVES: 319
+  - DESERT_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - << substratum_meta.yml:palette-bedrock
+
+features:
+  landforms:
+    - SMALL_MOSSY_BOULDER_PATCHES
+  buildings:
+    - SPAWNER_DUNGEONS_DESERT

@@ -1,0 +1,22 @@
+id: DRIPSTONE_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/substratum_cave_colors.yml:DRIPSTONE_CAVES
+
+palette:
+  - DRIPSTONE_CAVES: 319
+  - DRIPSTONE_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - << substratum_meta.yml:palette-bedrock
+  
+features:
+  preprocessors:
+    - DRIPSTONE_COLUMNS
+    - DRIPSTONE_CAVE_POOLS
+    - CEILING_DRIPSTONE
+  landforms:
+    - DRIPSTONE_CAVES_LARGE_CEILING_DRIPSTONE
+    - DRIPSTONE_CAVES_BOULDER_PATCHES
+  flora:
+    - DRIPSTONE_CAVES_CEILING_POINTED_DRIPSTONE
+    - DRIPSTONE_CAVES_FLOOR_POINTED_DRIPSTONE

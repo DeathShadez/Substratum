@@ -1,0 +1,15 @@
+id: WEBBED_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/substratum_cave_colors.yml:WEBBED_CAVES
+
+palette:
+  - WEBBED_CAVES: 319
+  - WEBBED_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - << substratum_meta.yml:palette-bedrock
+
+features:
+  preprocessors:
+    - HANGING_COBWEBS
+    - BIG_COBWEBS

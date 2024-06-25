@@ -1,0 +1,21 @@
+id: SUBSTRTAUM_ABSTRACT_ORE
+type: ORE
+abstract: true
+
+replace:
+  - minecraft:stone
+  - minecraft:deepslate
+  - minecraft:mossy_cobblestone
+  - minecraft:cobblestone
+  - minecraft:calcite
+  - minecraft:white_concrete
+  - minecraft:white_concrete_powder
+  - minecraft:red_concrete
+  - minecraft:red_terracotta
+  - minecraft:black_concrete
+  - minecraft:black_concrete_powder
+  - minecraft:yellow_concrete
+  - minecraft:yellow_terracotta
+  - minecraft:blue_concrete
+  - minecraft:blue_concrete_powder
+  - minecraft:blue_terracotta

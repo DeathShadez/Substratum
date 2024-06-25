@@ -3,6 +3,7 @@ biomes:
   extrusions:
     - << biome-providers/extrusions/add_cave_biomes.yml:extrusions
     - << biome-providers/extrusions/add_deep_dark.yml:extrusions
+    - << biome-providers/extrusions/add_substratum_cave_biomes.yml:extrusions
   provider:
     type: PIPELINE
     resolution: 4

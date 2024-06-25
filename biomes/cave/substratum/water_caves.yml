@@ -1,0 +1,19 @@
+id: WATER_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/substratum_cave_colors.yml:WATER_CAVES
+
+palette:
+  - WATER_CAVES: 319
+  - WATER_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - << substratum_meta.yml:palette-bedrock
+
+features:
+  preprocessors:
+    - WATER_CAVE_POOLS
+    - WATER_COLUMNS
+  flora:
+    - CORAL_FANS
+    - SEA_PICKLES
+    - CORAL_PLANTS

@@ -1,0 +1,30 @@
+id: HONEY_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/substratum_cave_colors.yml:HONEY_CAVES
+
+palette:
+  - HONEY_CAVES: 319
+  - HONEY_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - << substratum_meta.yml:palette-bedrock
+
+features:
+  landforms:
+    - GIANT_BEE_NESTS
+  postprocessors:
+    - HONEY_DRIPS
+  preprocessors:
+    - LUSH_CAVE_WATER_POOLS
+  flora:
+    - GRASS
+    - MIXED_FLOWER_COVER
+#    - LARGE_LEAF_VINES_UNDERGROUND
+    - MOSS_CARPET
+    - CAVE_GLOW_BERRIES
+    - CAVE_SPORE_BLOSSOMS
+    - SMALL_DRIPLEAF_CAVES
+    - BIG_DRIPLEAF_CAVES
+    - GRASS_CAVES
+    - AZALEA_BLOCK
+    - FLOWERING_AZALEA_BLOCK

@@ -1,7 +1,0 @@
-num random = randomInt(5);
-
-if (random == 0) structure(0,1,0,"big_mineshaft_procedural","NONE");
-if (random == 1) structure(0,0,0,"mineshaft_elevator_storage","NONE");
-if (random == 2) structure(0,1,0,"mineshaft_elevator_spawner","CW_180");
-if (random == 3) structure(0,1,0,"mineshaft_elevator_quarters","CCW_90");
-if (random == 4) structure(0,1,0,"mineshaft_elevator_block_storage","CW_90");

@@ -25,8 +25,3 @@ features:
     - SPAWNER_DUNGEONS_NORMAL
     - MOB_DUNGEONS
 
-palette:
-  - << meta.yml:palette-top
-  - GRASS_STONE: 316
-  - << meta.yml:palette-bottom
-

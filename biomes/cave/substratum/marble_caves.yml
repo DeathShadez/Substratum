@@ -1,0 +1,10 @@
+id: MARBLE_CAVES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/substratum_cave_colors.yml:MARBLE_CAVES
+
+palette:
+  - MARBLE_CAVES: 319
+  - << substratum_meta.yml:palette-bedrock
+

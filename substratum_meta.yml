@@ -1,0 +1,60 @@
+
+biome-distribution:
+  # Biome distribution refers to the placement of biomes, this does *NOT*
+  # include aspects like terrain height / shape within biomes, or anything
+  # else that generates within any given biome.
+  
+  # These parameters are designed to allow for easy modification of biome distribution,
+  # and are injected into the various biome distribution configs via meta-configuration.
+  # You can find these configs in the biome-providers directory, most of which contain
+  # additional more specific parameters.
+  
+  cave-scale: 100
+  # Controls the scale of land / coastal / oceanic distribution. Increasing
+  # this produces larger landmasses and larger oceans, and vice-versa when
+  # decreasing it.
+  # Default: 100
+
+  cave-biome-scale: 200
+  # Controls the scale of the placement of cave biomes, larger scale = bigger areas of
+  # any given cave biome, smaller scale = smaller cave biomes.
+  # Default: 200
+  
+  global-scale: 1
+  # Modifies the scale of everything, you can use this parameter to if you
+  # want just about every biome to be larger or smaller.
+  # By doubling the scale, you double the length & width of everything,
+  # e.g. if you have a biome that is 300 blocks wide with a scale of 1, and
+  # increase that scale to 2, that biome will generate 600 blocks wide.
+  # Default: 1
+
+  # Controls max height of cave biome generation
+  cave-biome-max: 300
+
+  # Controls min height of cave biome generation
+  cave-biome-min: -16
+
+# Misc global config stuff
+
+strata: # Controls global Y level ranges of strata
+  deepslate:
+    top: 7 # Y level where deepslate begins to replace stone
+    bottom: -7 # Y level where all stone is replaced by deepslate
+  bedrock:
+    top: -60 # Y level where bedrock begins to replace deepslate
+    bottom: -64 # Y level where all deepslate is replaced by bedrock
+  bedrock-top:
+    top: 319 
+    bottom: 316
+
+palette-top: # Added to the top of every palette
+  - BLOCK:minecraft:bedrock: $substratum_meta.yml:strata.bedrock-top.top
+
+palette-bottom: # Added to the bottom of every palette
+  - DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - BEDROCK: $substratum_meta.yml:strata.bedrock.top
+  - BLOCK:minecraft:bedrock: $substratum_meta.yml:strata.bedrock.bottom
+  
+palette-bedrock: # Added to the bottom of palettes that use their own deepslate palette
+  - BEDROCK: $substratum_meta.yml:strata.bedrock.top
+  - BLOCK:minecraft:bedrock: $substratum_meta.yml:strata.bedrock.bottom
