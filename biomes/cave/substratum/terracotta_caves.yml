@@ -6,4 +6,5 @@ color: $biomes/substratum_cave_colors.yml:TERRACOTTA_CAVES
 
 palette:
   - TERRACOTTA_CAVES: 319
+  - TERRACOTTA_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
   - << substratum_meta.yml:palette-bedrock
