@@ -1,0 +1,29 @@
+id: SUBSTRATUM_CEILING_ICICLES
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 2132
+  threshold: 0.1
+
+locator:
+  type: PATTERN
+  range:
+    min: -32
+    max: 319
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_SOLID
+        offset: 1
+      - type: MATCH_AIR
+        offset: 0
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: 
+    - ceiling_icicle: 15
+    - giant_ceiling_icicle: 1

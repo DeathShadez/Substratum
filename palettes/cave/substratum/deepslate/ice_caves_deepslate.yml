@@ -3,40 +3,38 @@ type: PALETTE
 
 layers:
   - materials:
-      - minecraft:snow_block: 7
-      - minecraft:packed_ice: 6
+      - minecraft:deepslate: 1
+      - minecraft:snow_block: 3
+      - minecraft:packed_ice: 2
       - minecraft:blue_ice: 1
-      - minecraft:deepslate: 12
+      - minecraft:snow_block: 3
     layers: 2
     sampler:
-     dimensions: 2
-     type: DOMAIN_WARP
-     amplitude: 4
-     warp:
-       type: OPEN_SIMPLEX_2
-       frequency: 0.1
-     sampler:
-       type: CELLULAR
-       return: CellValue
-       frequency: 0.08
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 4
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.01
+      sampler:
+        type: CELLULAR
+        return: CellValue
+        frequency: 0.08 
   - materials:
-      - minecraft:snow_block: 7
-      - minecraft:packed_ice: 6
+      - minecraft:deepslate: 1
+      - minecraft:packed_ice: 2
       - minecraft:blue_ice: 1
-      - minecraft:deepslate: 15
+      - minecraft:snow_block: 3
     layers: 1
     sampler:
-    type: WHITE_NOISE
-    amplitude: 1
-    warp:
-      type: "OPEN_SIMPLEX_2"
-      frequency: 0.9
-    sampler:
-      type: FBM
-      octaves: 2
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 4
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.1
       sampler:
-        type: "CELLULAR"
-        return: "CellValue"
-        frequency: 0.5
-        salt: 9345
+        type: CELLULAR
+        return: CellValue
+        frequency: 0.8 
 

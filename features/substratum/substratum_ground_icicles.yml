@@ -1,0 +1,33 @@
+id: SUBSTRATUM_GROUND_ICICLES
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 2132
+  threshold: 0.1
+
+
+locator:
+  type: PATTERN
+  range:
+    min: -32
+    max: 319
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_SET
+        blocks: 
+          - minecraft:packed_ice
+          - minecraft:blue_ice
+        offset: -1
+      - type: MATCH_AIR
+        offset: 0
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: 
+    - giant_ground_icicle: 1
+    - blank: 8

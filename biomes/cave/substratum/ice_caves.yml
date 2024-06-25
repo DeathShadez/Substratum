@@ -11,4 +11,7 @@ palette:
 
 features:
   preprocessors:
-    - CEILING_ICICLES
+    - SUBSTRATUM_CEILING_ICICLES
+    - SUBSTRATUM_GROUND_ICICLES
+  slabs:
+    - SNOW
