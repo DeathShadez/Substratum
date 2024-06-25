@@ -8,7 +8,3 @@ palette:
   - MESA_CAVES: 319
   - MESA_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
   - << substratum_meta.yml:palette-bedrock
-
-features:
-  landforms:
-    - SMALL_MOSSY_BOULDER_PATCHES

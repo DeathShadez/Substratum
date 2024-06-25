@@ -3,40 +3,72 @@ type: PALETTE
 
 layers:
   - materials:
-      - minecraft:red_sand: 16
-      - minecraft:white_terracotta: 1
-      - minecraft:terracotta: 4
-      - minecraft:stone: 12
+      - minecraft:stone: 1
+      - minecraft:red_sand: 3
+      - minecraft:stone: 1
+      - minecraft:red_sandstone: 2
+      - minecraft:stone: 1
+      - minecraft:smooth_red_sandstone: 1
+    layers: 3
+    sampler:
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 4
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.01
+      sampler:
+        type: CELLULAR
+        return: CellValue
+        frequency: 0.08 
+  - materials:
+      - minecraft:red_sandstone: 1
     layers: 2
     sampler:
-     dimensions: 2
-     type: DOMAIN_WARP
-     amplitude: 4
-     warp:
-       type: OPEN_SIMPLEX_2
-       frequency: 0.1
-     sampler:
-       type: CELLULAR
-       return: CellValue
-       frequency: 0.08
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 4
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.01
+      sampler:
+        type: CELLULAR
+        return: CellValue
+        frequency: 0.08 
   - materials:
-      - minecraft:red_sand: 7
+      - minecraft:terracotta: 1
+    layers: 2
+    sampler:
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 4
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.01
+      sampler:
+        type: CELLULAR
+        return: CellValue
+        frequency: 0.08 
+  - materials:
+      - minecraft:stone: 1
+      - minecraft:smooth_red_sandstone: 1
+      - minecraft:terracotta: 1
       - minecraft:white_terracotta: 1
-      - minecraft:terracotta: 4
-      - minecraft:stone: 17
+      - minecraft:black_terracotta: 1
+      - minecraft:yellow_terracotta: 1
+      - minecraft:red_terracotta: 1
+      - minecraft:gray_terracotta: 1
+      - minecraft:light_gray_terracotta: 1
+      - minecraft:orange_terracotta: 1
     layers: 1
     sampler:
-    type: WHITE_NOISE
-    amplitude: 1
-    warp:
-      type: "OPEN_SIMPLEX_2"
-      frequency: 0.9
-    sampler:
-      type: FBM
-      octaves: 2
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 4
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.01
       sampler:
-        type: "CELLULAR"
-        return: "CellValue"
-        frequency: 0.5
-        salt: 9345
-
+        type: CELLULAR
+        return: CellValue
+        frequency: 0.08 
