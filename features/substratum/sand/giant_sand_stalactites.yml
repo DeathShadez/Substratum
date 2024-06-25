@@ -1,0 +1,38 @@
+id: GIANT_SAND_STALACTITES
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 6578
+  threshold: 0.1
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: -32
+        max: 319
+      pattern:
+        type: MATCH_SOLID
+        offset: 1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+    - type: ADJACENT_PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SOLID
+        offset: 1
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: 
+    - giant_sand_stalactite: 1
+    - blank: 5
+    
