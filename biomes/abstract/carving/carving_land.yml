@@ -9,9 +9,9 @@ carving:
     variables:
   
       carvingThreshold: 0.55 # Higher = less carving
-      carvingMinHeight: -63
+      carvingMinHeight: ${substratum_meta.yml:biome-distribution.cave-biome-min}
       carvingMinTaper: 8
-      carvingMaxHeight: 300
+      carvingMaxHeight: ${substratum_meta.yml:biome-distribution.cave-biome-max}
       carvingMaxTaper: 20
       carvingCap: 1 # Caps the amount of base carving
 
@@ -27,30 +27,8 @@ carving:
       pillarStrength: 0.5
       pillarRadius: 0.02
     
-      megaCaveStrength: 0.7
-      megaCaveSize: 0.9
-
-      # carvingThreshold: 0.55 # Higher = less carving
-      # carvingMinHeight: -63
-      # carvingMinTaper: 8
-      # carvingMaxHeight: 140
-      # carvingMaxTaper: 20
-      # carvingCap: 1 # Caps the amount of base carving
-
-      # cheeseStrength: 0.8
-      # cheeseHorizontalFrequency: 1.5
-      # cheeseVerticalFrequency: 3
-      # cheeseMaxHeight: 90
-      # cheeseMaxTaper: 40
-
-      # spaghettiStrengthLarge: 0.59
-      # spaghettiStrengthSmall: 0.57
-
-      # pillarStrength: 0.5
-      # pillarRadius: 0.02
-    
-      # megaCaveStrength: 0.3
-      # megaCaveSize: 0.3
+      megaCaveStrength: 0.3
+      megaCaveSize: 0.3
 
     expression: |
       -carvingThreshold
