@@ -15,3 +15,5 @@ features:
     - SUBSTRATUM_GROUND_ICICLES
   slabs:
     - SNOW
+  landforms:
+    - SUBSTRATUM_GIANT_CEILING_ICICLES
