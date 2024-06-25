@@ -21,6 +21,4 @@ features:
   underwater-flora:
     - KELP
     - SEAGRASS
-  structures:
-    - SPAWNER_DUNGEONS_NORMAL
 
