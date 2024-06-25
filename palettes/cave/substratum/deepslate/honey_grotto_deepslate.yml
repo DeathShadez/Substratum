@@ -1,13 +1,12 @@
-id: HONEY_CAVES_DEEPSLATE
+id: HONEY_GROTTO_DEEPSLATE
 type: PALETTE
 
 layers:
   - materials:
-      - minecraft:deepslate: 7
+      - minecraft:deepslate: 2
       - minecraft:yellow_terracotta: 2
+      - minecraft:moss_block: 2
       - minecraft:yellow_concrete: 3
-      - minecraft:yellow_terracotta: 2
-      - minecraft:deepslate: 7
     layers: 2
     sampler:
       dimensions: 2
@@ -15,14 +14,15 @@ layers:
       amplitude: 4
       warp:
         type: OPEN_SIMPLEX_2
-        frequency: 0.1
+        frequency: 0.01
       sampler:
         type: CELLULAR
         return: CellValue
-        frequency: 0.08
+        frequency: 0.08 
   - materials:
       - minecraft:deepslate: 4
       - minecraft:yellow_terracotta: 2
+      - minecraft:honeycomb_block: 1
       - minecraft:yellow_concrete: 3
     layers: 1
     sampler:
@@ -35,4 +35,4 @@ layers:
       sampler:
         type: CELLULAR
         return: CellValue
-        frequency: 0.5
+        frequency: 0.8 

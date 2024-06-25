@@ -8,7 +8,7 @@ extrusions:
       frequency: 1 / ${substratum_meta.yml:biome-distribution.cave-biome-scale} / ${substratum_meta.yml:biome-distribution.global-scale}
     to:
       - SELF: 6
-      - HONEY_CAVES: 1
+      - HONEY_GROTTO: 1
       - GROVE_CAVES: 1
       - MOSSY_CAVES: 1
       - DESERT_CAVES: 1
@@ -19,7 +19,7 @@ extrusions:
       - AMETHYST_CAVES: 1
       - WEBBED_CAVES: 1
       - ICE_CAVES: 1
-      - HONEY_CAVES: 1
+      - HONEY_GROTTO: 1
       - MUSHROOM_CAVES: 1
       - WATER_CAVES: 1
     range:
