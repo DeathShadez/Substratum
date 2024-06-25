@@ -13,5 +13,3 @@ features:
   landforms:
     - GIANT_SAND_STALACMITES
     - GIANT_SAND_STALACTITES
-  buildings:
-    - SPAWNER_DUNGEONS_DESERT
