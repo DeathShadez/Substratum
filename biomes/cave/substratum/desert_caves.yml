@@ -10,7 +10,5 @@ palette:
   - << substratum_meta.yml:palette-bedrock
 
 features:
-  landforms:
-    - SMALL_MOSSY_BOULDER_PATCHES
   buildings:
     - SPAWNER_DUNGEONS_DESERT
