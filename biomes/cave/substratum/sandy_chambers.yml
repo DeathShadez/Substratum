@@ -1,12 +1,12 @@
-id: DESERT_CAVES
+id: SANDY_CHAMBERS
 type: BIOME
 extends: [ CAVE, BASE ]
 vanilla: minecraft:dripstone_caves
-color: $biomes/substratum_cave_colors.yml:DESERT_CAVES
+color: $biomes/substratum_cave_colors.yml:SANDY_CHAMBERS
 
 palette:
-  - DESERT_CAVES: 319
-  - DESERT_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - SANDY_CHAMBERS: 319
+  - SANDY_CHAMBERS_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
   - << substratum_meta.yml:palette-bedrock
 
 features:
