@@ -18,7 +18,7 @@ extrusions:
       - MARBLE_CAVES: 1
       - AMETHYST_CAVES: 1
       - WEBBED_CAVES: 1
-      - ICE_CAVES: 1
+      - FROZEN_CAVERNS: 1
       - HONEY_GROTTO: 1
       - MUSHROOM_CAVES: 1
       - WATER_CAVES: 1

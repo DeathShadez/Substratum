@@ -1,9 +1,9 @@
-id: ICE_CAVES_DEEPSLATE
+id: FROZEN_CAVERNS
 type: PALETTE
 
 layers:
   - materials:
-      - minecraft:deepslate: 1
+      - minecraft:stone: 1
       - minecraft:snow_block: 3
       - minecraft:packed_ice: 2
       - minecraft:blue_ice: 1
@@ -21,7 +21,7 @@ layers:
         return: CellValue
         frequency: 0.08 
   - materials:
-      - minecraft:deepslate: 1
+      - minecraft:stone: 1
       - minecraft:packed_ice: 2
       - minecraft:blue_ice: 1
       - minecraft:snow_block: 3

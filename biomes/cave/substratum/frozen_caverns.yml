@@ -1,12 +1,12 @@
-id: ICE_CAVES
+id: FROZEN_CAVERNS
 type: BIOME
 extends: [ CAVE, BASE ]
 vanilla: minecraft:dripstone_caves
-color: $biomes/substratum_cave_colors.yml:ICE_CAVES
+color: $biomes/substratum_cave_colors.yml:FROZEN_CAVERNS
 
 palette:
-  - ICE_CAVES: 319
-  - ICE_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - FROZEN_CAVERNS: 319
+  - FROZEN_CAVERNS_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
   - << substratum_meta.yml:palette-bedrock
 
 features:
