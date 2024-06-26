@@ -10,7 +10,7 @@ extrusions:
       - SELF: 6
       - HONEY_GROTTO: 1
       - GROVE_CAVES: 1
-      - MOSSY_CAVES: 1
+      - OVERGROWN_DUGOUT: 1
       - SANDY_CHAMBERS: 1
       - SUBTERRANEAN_MESA: 1
       - MAGMA_CAVES: 1

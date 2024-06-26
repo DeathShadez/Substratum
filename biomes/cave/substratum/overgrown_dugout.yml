@@ -1,12 +1,12 @@
-id: MOSSY_CAVES
+id: OVERGROWN_DUGOUT
 type: BIOME
 extends: [ CAVE, BASE ]
 vanilla: minecraft:dripstone_caves
-color: $biomes/substratum_cave_colors.yml:MOSSY_CAVES
+color: $biomes/substratum_cave_colors.yml:OVERGROWN_DUGOUT
 
 palette:
-  - MOSSY_CAVES: 319
-  - MOSSY_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - OVERGROWN_DUGOUT: 319
+  - OVERGROWN_DUGOUT_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
   - << substratum_meta.yml:palette-bedrock
 
 features:
