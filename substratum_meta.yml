@@ -29,14 +29,14 @@ biome-distribution:
   # Default: 1
 
   cave-biome-max: 300
-  # Controls max height of cave biome generation
+  # Controls max height of substratum cave biome generation
   # Substratum Default: 300
-  # OverworldConfig Default: 48
+  # OverworldConfig 1.0 Default: 48
 
   cave-biome-min: -16
-  # Controls min height of cave biome generation
+  # Controls min height of substratum cave biome generation
   # Substratum Default: -16
-  # OverworldConfig Default: -16
+  # OverworldConfig 1.0 Default: -16
 
 # Misc global config stuff
 
