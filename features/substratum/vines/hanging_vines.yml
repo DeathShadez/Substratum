@@ -1,32 +1,32 @@
-id: HANGING_COBWEBS
+id: HANGING_VINES
 type: FEATURE
 
 distributor:
   type: SAMPLER
   sampler:
     type: POSITIVE_WHITE_NOISE
-    salt: 2445
-  threshold: 0.05
+    salt: 6546
+  threshold: 0.1
 
 locator:
   type: AND
   locators:
     - type: PATTERN
       range: &range
-        min: 5
+        min: -32
         max: 319
-      pattern:
-        type: MATCH_AIR
-        offset: 0
-    - type: PATTERN
-      range: *range
       pattern:
         type: MATCH_SOLID
         offset: 1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 0
 
 structures:
   distribution:
-    type: CONSTANT
-  structures: hanging_cobweb
-
-  
+    type: WHITE_NOISE
+  structures: 
+    - hanging_vine: 1
+    - blank: 1

@@ -6,4 +6,12 @@ color: $biomes/substratum_cave_colors.yml:MOSSY_CAVES
 
 palette:
   - MOSSY_CAVES: 319
+  - MOSSY_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
   - << substratum_meta.yml:palette-bedrock
+
+features:
+  flora:
+    - HANGING_VINES
+    - WALL_VINES
+  postprocessors:
+    - HANGING_COBWEBS

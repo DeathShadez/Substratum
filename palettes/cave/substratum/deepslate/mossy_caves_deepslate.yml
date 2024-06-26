@@ -1,11 +1,10 @@
-id: MOSSY_CAVES
+id: MOSSY_CAVES_DEEPSLATE
 type: PALETTE
 
 layers:
   - materials:
-      - minecraft:stone: 4
-      - minecraft:cobblestone: 3
-      - minecraft:mossy_cobblestone: 2
+      - minecraft:deepslate: 3
+      - minecraft:cobbled_deepslate: 2
       - minecraft:moss_block: 1
     layers: 1
     sampler:
