@@ -1,0 +1,24 @@
+id: MARBLE_CAVES_DEEPSLATE
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:deepslate: 5
+      - minecraft:white_concrete: 3
+      - minecraft:white_concrete_powder: 1
+      - minecraft:calcite: 4
+    layers: 1
+    sampler:
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 4
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.01
+      sampler:
+        type: CELLULAR
+        return: CellValue
+        frequency: 0.08 
+      
+  
+

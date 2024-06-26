@@ -6,5 +6,10 @@ color: $biomes/substratum_cave_colors.yml:MARBLE_CAVES
 
 palette:
   - MARBLE_CAVES: 319
+  - MARBLE_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
   - << substratum_meta.yml:palette-bedrock
 
+features:
+  landforms:
+    - GIANT_CALCITE_STALACMITES
+    - GIANT_CALCITE_STALACTITES

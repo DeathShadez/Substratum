@@ -3,25 +3,38 @@ type: PALETTE
 
 layers:
   - materials:
-      - minecraft:white_concrete: 5
-      - minecraft:white_concrete_powder: 5
-      - minecraft:calcite: 5
-      - minecraft:stone: 25
-    layers: 1
-sampler:
-  type: WHITE_NOISE
-  amplitude: 1
-  warp:
-    type: "OPEN_SIMPLEX_2"
-    frequency: 0.9
-  sampler:
-    type: FBM
-    octaves: 2
+      - minecraft:stone: 2
+      - minecraft:white_concrete: 2
+      - minecraft:white_concrete_powder: 1
+      - minecraft:calcite: 3
+    layers: 2
     sampler:
-      type: "CELLULAR"
-      return: "CellValue"
-      frequency: 0.5
-      salt: 9345
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 4
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.01
+      sampler:
+        type: CELLULAR
+        return: CellValue
+        frequency: 0.08 
+  - materials:
+      - minecraft:stone: 2
+      - minecraft:white_concrete: 2
+      - minecraft:calcite: 3
+    layers: 1
+    sampler:
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 4
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.1
+      sampler:
+        type: CELLULAR
+        return: CellValue
+        frequency: 0.8 
       
   
 
