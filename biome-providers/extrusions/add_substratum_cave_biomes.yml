@@ -9,7 +9,6 @@ extrusions:
     to:
       - SELF: 6
       - HONEY_GROTTO: 1
-      - GROVE_CAVES: 1
       - OVERGROWN_DUGOUT: 1
       - SANDY_CHAMBERS: 1
       - SUBTERRANEAN_MESA: 1
@@ -17,9 +16,7 @@ extrusions:
       - TERRACOTTA_CAVES: 1
       - MARBLE_MINES: 1
       - AMETHYST_CAVES: 1
-      - WEBBED_CAVES: 1
       - FROZEN_CAVERNS: 1
-      - HONEY_GROTTO: 1
       - MUSHROOM_CAVES: 1
       - WATER_CAVES: 1
     range:
