@@ -1,9 +1,9 @@
-id: MAGMA_CAVES
+id: MOLTEN_PASSAGES_DEEPSLATE
 type: PALETTE
 
 layers:
   - materials:
-      - minecraft:stone: 1
+      - minecraft:deepslate: 1
       - minecraft:blackstone: 2
       - minecraft:black_concrete_powder: 1
       - minecraft:black_concrete: 2
@@ -18,9 +18,9 @@ layers:
       sampler:
         type: CELLULAR
         return: CellValue
-        frequency: 0.8  
+        frequency: 0.8 
   - materials:
-      - minecraft:stone: 1
+      - minecraft:deepslate: 1
       - minecraft:blackstone: 2
       - minecraft:black_concrete_powder: 1
       - minecraft:black_concrete: 2

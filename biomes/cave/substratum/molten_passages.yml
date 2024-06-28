@@ -1,12 +1,12 @@
-id: MAGMA_CAVES
+id: MOLTEN_PASSAGES
 type: BIOME
 extends: [ BASE, FLAT_CAVE ]
 vanilla: minecraft:dripstone_caves
-color: $biomes/substratum_cave_colors.yml:MAGMA_CAVES
+color: $biomes/substratum_cave_colors.yml:MOLTEN_PASSAGES
 
 palette:
-  - MAGMA_CAVES: 319
-  - MAGMA_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - MOLTEN_PASSAGES: 319
+  - MOLTEN_PASSAGES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
   - << substratum_meta.yml:palette-bedrock
 
 features:
