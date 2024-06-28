@@ -1,4 +1,4 @@
-id: GRASS
+id: CAVE_GRASS
 type: FEATURE
 
 distributor:
@@ -13,7 +13,7 @@ locator:
   locators:
     - type: SURFACE
       range: &range
-        min: 0
+        min: -16
         max: 319
     - type: PATTERN
       range: *range

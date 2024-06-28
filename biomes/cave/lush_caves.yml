@@ -12,8 +12,6 @@ palette:
 features:
   preprocessors:
     - LUSH_CAVE_WATER_POOLS
-  landforms:
-    - GREAT_AZALEA_TREES
   flora:
     - LARGE_LEAF_VINES_UNDERGROUND
     - MOSS_CARPET
@@ -21,6 +19,6 @@ features:
     - CAVE_SPORE_BLOSSOMS
     - SMALL_DRIPLEAF_CAVES
     - BIG_DRIPLEAF_CAVES
-    - GRASS_CAVES
+    - CAVE_GRASS
     - AZALEA_BLOCK
     - FLOWERING_AZALEA_BLOCK
