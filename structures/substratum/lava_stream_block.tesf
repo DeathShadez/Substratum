@@ -1,0 +1,16 @@
+if (getBlock(1,0,0) != "minecraft:air" &&
+getBlock(-1,0,0) != "minecraft:air" &&
+getBlock(0,0,1) != "minecraft:air" &&
+getBlock(0,0,-1) != "minecraft:air" &&
+getBlock(0,-1,0) != "minecraft:air") {
+    block(0,0,0,"minecraft:lava");
+} else {
+    block(0,0,0,"minecraft:magma_block", true);
+    if (randomInt(6) == 0) {
+        num length = 2+randomInt(3);
+        for (num y = 1; y < length; y = y + 1) {
+            if (getBlock(0,-y,0) != "minecraft:air") fail;
+            block(0,-y,0,"minecraft:magma_block", true);
+        }
+    } 
+}

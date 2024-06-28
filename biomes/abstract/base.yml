@@ -5,6 +5,11 @@ extends:
   - DEPOSITS_DEFAULT
   - ORES_DEFAULT
 
+terrain:
+  sampler:
+    type: LINEAR_HEIGHTMAP
+    base: 319
+
 colors:
   fog: 0x000000
   sky: 0x000000
@@ -21,4 +26,6 @@ features:
   underwater-flora:
     - KELP
     - SEAGRASS
+
+
 

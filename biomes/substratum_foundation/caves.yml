@@ -1,12 +1,12 @@
 id: CAVES
 type: BIOME
-extends: [ EQ_CAVES, CARVING_LAND, BASE ]
+extends: [ BASE, CAVE ]
 vanilla: minecraft:windswept_hills
 color: $biomes/substratum_cave_colors.yml:CAVES
 
 palette:
   - << substratum_meta.yml:palette-top
-  - GRASS_STONE: 316
+  - BLOCK:minecraft:stone: 316
   - << substratum_meta.yml:palette-bottom
 
 tags:

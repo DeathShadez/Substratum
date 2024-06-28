@@ -1,0 +1,18 @@
+num i = 0;
+bool foundBot = false;
+for (num unused = 0; i < 319; i = i + 1) {
+        if (getBlock(0, -i-1, 0) != "minecraft:air" &&
+            getBlock(0, -i-1,-1) != "minecraft:air" &&
+            getBlock(1, -i-1, 0) != "minecraft:air" &&
+            getBlock(-1, -i-1, 0) != "minecraft:air" &&
+            getBlock(0, -i-1, 1) != "minecraft:air") {
+            block(0, -i-1, 0, "minecraft:lava");
+            foundBot = true;
+            break;
+        }
+    
+}
+if (!foundBot) fail;
+for (num unused = 0; i >= 0; i = i - 1) {
+    block(0, -i, 0, "minecraft:lava[level=8]");
+}

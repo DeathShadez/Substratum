@@ -5,14 +5,14 @@ distributor:
   type: SAMPLER
   sampler:
     type: POSITIVE_WHITE_NOISE
-    salt: 5012
-  threshold: 0.5/8
+    salt: 3457
+  threshold: 0.5 / 8
 
 locator:
   type: PATTERN
   range:
-    min: 0
-    max: 280
+    min: -16
+    max: 319
   pattern:
     # Match air on top of lava
     type: AND

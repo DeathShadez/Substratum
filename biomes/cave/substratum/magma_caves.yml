@@ -1,6 +1,6 @@
 id: MAGMA_CAVES
 type: BIOME
-extends: [ CAVE, BASE ]
+extends: [ BASE, FLAT_CAVE ]
 vanilla: minecraft:dripstone_caves
 color: $biomes/substratum_cave_colors.yml:MAGMA_CAVES
 
@@ -11,6 +11,10 @@ palette:
 
 features:
   preprocessors:
+    - MAGMA_STREAMS
     - LAVA_POOLS
+  landforms:
+    - CHARRED_SPIKES
+  postprocessors:
     - LAVA_COLUMNS
   

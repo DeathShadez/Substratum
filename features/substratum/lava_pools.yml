@@ -9,7 +9,7 @@ distributor:
       type: OPEN_SIMPLEX_2
       frequency: 0.03
       salt: 4293
-  threshold: 0.5
+  threshold: 0.2
 
 locator:
   type: AND
@@ -23,8 +23,7 @@ locator:
         patterns:
           - type: MATCH_AIR
             offset: 1
-          - type: MATCH
-            block: minecraft:stone
+          - type: MATCH_SOLID
             offset: 0
           - type: MATCH_SOLID
             offset: -1
@@ -37,10 +36,9 @@ locator:
           - type: MATCH_SET
             blocks: 
               - minecraft:stone
-              - minecraft:red_concrete
-              - minecraft:red_terracotta
+              - minecraft:smooth_basalt
               - minecraft:blackstone
-              - minecraft:magma_block
+              - minecraft:basalt
             offset: 0
           - type: MATCH
             block: minecraft:water
