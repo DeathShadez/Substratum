@@ -18,7 +18,7 @@ extrusions:
       - AMETHYST_HOLLOW: 1
       - FROZEN_CAVERNS: 1
       - FUNGAL_UNDERGROWTH: 1
-      #- WATER_CAVES: 1
+      #- CORAL_COVES: 1
     range:
       min: ${substratum_meta.yml:biome-distribution.cave-biome-min}
       max: ${substratum_meta.yml:biome-distribution.cave-biome-max}

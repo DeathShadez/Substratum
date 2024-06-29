@@ -1,12 +1,12 @@
-id: WATER_CAVES
+id: CORAL_COVES
 type: BIOME
 extends: [ CAVE, BASE ]
 vanilla: minecraft:dripstone_caves
-color: $biomes/substratum_cave_colors.yml:WATER_CAVES
+color: $biomes/substratum_cave_colors.yml:CORAL_COVES
 
 palette:
-  - WATER_CAVES: 319
-  - WATER_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - CORAL_COVES: 319
+  - CORAL_COVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
   - << substratum_meta.yml:palette-bedrock
 
 features:
