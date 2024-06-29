@@ -27,7 +27,7 @@ carving:
       pillarStrength: 0.5
       pillarRadius: 0.02
     
-      megaCaveStrength: 0.5
+      megaCaveStrength: 0.6
       megaCaveSize: 0.8
 
     expression: |
