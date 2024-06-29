@@ -9,17 +9,6 @@ biome-distribution:
   # You can find these configs in the biome-providers directory, most of which contain
   # additional more specific parameters.
   
-  cave-scale: 100
-  # Controls the scale of land / coastal / oceanic distribution. Increasing
-  # this produces larger landmasses and larger oceans, and vice-versa when
-  # decreasing it.
-  # Default: 100
-
-  cave-biome-scale: 200
-  # Controls the scale of the placement of cave biomes, larger scale = bigger areas of
-  # any given cave biome, smaller scale = smaller cave biomes.
-  # Default: 200
-  
   global-scale: 1
   # Modifies the scale of everything, you can use this parameter to if you
   # want just about every biome to be larger or smaller.
@@ -27,6 +16,15 @@ biome-distribution:
   # e.g. if you have a biome that is 300 blocks wide with a scale of 1, and
   # increase that scale to 2, that biome will generate 600 blocks wide.
   # Default: 1
+
+  cave-scale: 100
+  # Controls the scale of all cave foundations
+  # Default: 100
+
+  cave-biome-scale: 200
+  # Controls the scale of the placement of cave biomes, larger scale = bigger areas of
+  # any given cave biome, smaller scale = smaller cave biomes.
+  # Default: 200
 
   substratum-carving-max: 300
   # Controls max height of substratum cave biome generation
