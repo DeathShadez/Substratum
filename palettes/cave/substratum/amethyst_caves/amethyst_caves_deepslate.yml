@@ -3,18 +3,13 @@ type: PALETTE
 
 layers:
   - materials:
-      - minecraft:magenta_concrete: 2
-      - minecraft:magenta_concrete_powder: 3
-      - minecraft:purple_concrete_powder: 4
-      - minecraft:purple_concrete: 3
-      - minecraft:amethyst_block: 1
-      - minecraft:deepslate: 5
-    layers: 2
-  - materials:
-      - minecraft:purple_concrete_powder: 4
-      - minecraft:purple_concrete: 3
-      - minecraft:amethyst_block: 1
-      - minecraft:deepslate: 10
+      - minecraft:stone: 8
+      - minecraft:purple_concrete_powder: 2
+      - minecraft:purple_concrete: 4
+      - minecraft:budding_amethyst: 1
+      - minecraft:amethyst_block: 3
+      - minecraft:purple_concrete: 4
+      - minecraft:purple_concrete_powder: 2
     layers: 2
 
 sampler:
@@ -27,4 +22,4 @@ sampler:
   sampler:
     type: CELLULAR
     return: CellValue
-    frequency: 0.08
+    frequency: 0.8

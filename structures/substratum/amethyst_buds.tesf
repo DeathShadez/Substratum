@@ -1,0 +1,71 @@
+bool west = false;
+bool north = false;
+bool south = false;
+bool east = false;
+bool up = false;
+bool diown = false;
+
+num age = randomInt(3);
+
+str setBlock = "";
+if (getBlock(1,0,0) == "minecraft:air") {
+
+    age = randomInt(3);
+    if (age == 0) setBlock = "minecraft:small_amethyst_bud";
+    if (age == 1) setBlock = "minecraft:medium_amethyst_bud";
+    if (age == 2) setBlock = "minecraft:large_amethyst_bud";
+
+    block(1,0,0, setBlock+"[facing=east]", false);
+}
+
+if (getBlock(-1,0,0) == "minecraft:air") {
+
+    age = randomInt(3);
+    if (age == 0) setBlock = "minecraft:small_amethyst_bud";
+    if (age == 1) setBlock = "minecraft:medium_amethyst_bud";
+    if (age == 2) setBlock = "minecraft:large_amethyst_bud";
+
+    block(-1,0,0, setBlock+"[facing=west]", false);
+}
+
+if (getBlock(0,0,1) == "minecraft:air") {
+
+    age = randomInt(3);
+    if (age == 0) setBlock = "minecraft:small_amethyst_bud";
+    if (age == 1) setBlock = "minecraft:medium_amethyst_bud";
+    if (age == 2) setBlock = "minecraft:large_amethyst_bud";
+
+    block(0,0,1, setBlock+"[facing=south]", false);
+}
+
+if (getBlock(0,0,-1) == "minecraft:air") {
+
+    age = randomInt(3);
+    if (age == 0) setBlock = "minecraft:small_amethyst_bud";
+    if (age == 1) setBlock = "minecraft:medium_amethyst_bud";
+    if (age == 2) setBlock = "minecraft:large_amethyst_bud";
+
+    block(0,0,-1, setBlock+"[facing=north]", false);
+}
+
+if (getBlock(0,1,0) == "minecraft:air") {
+
+    age = randomInt(3);
+    if (age == 0) setBlock = "minecraft:small_amethyst_bud";
+    if (age == 1) setBlock = "minecraft:medium_amethyst_bud";
+    if (age == 2) setBlock = "minecraft:large_amethyst_bud";
+
+    block(0,1,0, setBlock+"[facing=up]", false);
+}
+
+if (getBlock(0,-1,0) == "minecraft:air") {
+
+    age = randomInt(3);
+    if (age == 0) setBlock = "minecraft:small_amethyst_bud";
+    if (age == 1) setBlock = "minecraft:medium_amethyst_bud";
+    if (age == 2) setBlock = "minecraft:large_amethyst_bud";
+
+    block(0,-1,0, setBlock+"[facing=down]", false);
+}
+
+

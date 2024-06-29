@@ -10,6 +10,5 @@ palette:
   - << substratum_meta.yml:palette-bedrock
 
 features:
-  landforms:
-    - AMETHYST_SPIKE_CLUSTERS
-    - AMETHYST_SPIKE_CLUSTERS_DOWNWARD
+  flora: 
+    - AMETHYST_BUDS
