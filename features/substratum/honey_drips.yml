@@ -13,8 +13,8 @@ locator:
   locators:
     - type: PATTERN
       range: &range
-        min: 0
-        max: 255
+        min: -69
+        max: 319
       pattern:
         type: MATCH_AIR
         offset: 0

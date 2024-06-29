@@ -27,7 +27,7 @@ locator:
   locators:
     - type: SURFACE
       range: &range
-        min: -16
+        min: -69
         max: 319
     - type: PATTERN
       range: *range
