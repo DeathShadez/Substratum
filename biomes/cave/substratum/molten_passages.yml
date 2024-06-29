@@ -16,5 +16,5 @@ features:
   landforms:
     - CHARRED_SPIKES
   postprocessors:
-    - LAVA_COLUMNS
+    - CAVE_LAVA_COLUMNS
   

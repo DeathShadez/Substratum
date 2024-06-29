@@ -1,4 +1,4 @@
-id: LAVA_COLUMNS
+id: CAVE_LAVA_COLUMNS
 type: FEATURE
 
 distributor:
@@ -26,4 +26,4 @@ locator:
 structures:
   distribution:
     type: CONSTANT
-  structures: lava_column
+  structures: cave_lava_column
