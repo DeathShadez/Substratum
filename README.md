@@ -9,7 +9,7 @@ Part of this pack uses resources from these packs:
 - ReimagEnd, found [here](https://github.com/justaureus/ReimagEND).
 
 ## POSSIBLE ISSUES
-- Might spawn players at the top bedrock layer depending how on world is generated
+- Might spawn players at the top bedrock layer depending on how world is generated
 - Players might spawn and suffocate upon initial spawn
 
 ## Installation
@@ -17,7 +17,7 @@ Download the Substratum pack from the [releases page](https://github.com/DeathSh
 or from the main Substratum branch for changes that haven't been applied to the latest release yet.
 
 ### Read the *World Installation* section if you want a typical fully underground Substratum world. 
-### Otherwise skip ahead to the *Merge Installation* section for add Substratum caves to other packs. 
+### Otherwise skip ahead to the *Drop-In Merge Installation* section for add Substratum caves to other packs. 
 
 ## World Installation
 Follow this [installation guide](https://terra.polydev.org/install/index.html) for your particular platform.
@@ -40,7 +40,7 @@ worlds:
     generator: Terra:SUBSTRATUM
 ```
 
-## Merge Installation
+## Drop-In Merge Installation
 If you want to add Substratum's cave biomes to a pack, *please follow the steps below closely*.
 
 1. Copy all of Substratum's content over to the desired pack 
