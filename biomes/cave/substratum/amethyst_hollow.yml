@@ -1,0 +1,14 @@
+id: AMETHYST_HOLLOW
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/substratum_cave_colors.yml:AMETHYST_HOLLOW
+
+palette:
+  - AMETHYST_HOLLOW: 319
+  - AMETHYST_HOLLOW_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - << substratum_meta.yml:palette-bedrock
+
+features:
+  flora: 
+    - AMETHYST_BUDS

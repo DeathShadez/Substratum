@@ -15,7 +15,7 @@ extrusions:
       - MOLTEN_PASSAGES: 1
       - TERRACOTTA_CAVES: 1
       - MARBLE_MINES: 1
-      - AMETHYST_CAVES: 1
+      - AMETHYST_HOLLOW: 1
       - FROZEN_CAVERNS: 1
       - FUNGAL_UNDERGROWTH: 1
       - WATER_CAVES: 1
