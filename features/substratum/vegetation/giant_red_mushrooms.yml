@@ -1,0 +1,51 @@
+id: GIANT_RED_MUSHROOMS
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 17
+  padding: 6
+  salt: 4357
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: -69
+        max: 319
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 3
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 5
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SOLID
+        offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SOLID
+        offset: -3
+    - type: ADJACENT_PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SOLID
+        offset: -1
+    
+    
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: giant_red_mushroom

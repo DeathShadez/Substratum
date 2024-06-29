@@ -1,0 +1,118 @@
+if (true) {
+    if (getBlock(3,-2,0) == "minecraft:air") fail;
+    if (getBlock(-3,-2,0) == "minecraft:air") fail;
+    if (getBlock(0,-2,3) == "minecraft:air") fail;
+    if (getBlock(0,-2,-3) == "minecraft:air") fail;
+}
+
+
+num randPrecision = 100;
+num goldenAngle = 2.39996;
+num pi = 3.14159;
+
+str trunkBlock = "minecraft:mushroom_stem";
+str altTrunkBlock = trunkBlock;
+str setBlock = trunkBlock;
+
+num trunkRadius = 2;
+num length = 20+randomInt(10);
+num xTranslate = 0;
+num zTranslate = 0;
+
+if (getBlock(0,length,0) != "minecraft:air") fail;
+
+num branchAngle = randomInt(randPrecision)/randPrecision*2*pi;
+
+num sideBranchInterval = 5+randomInt(3);
+num sideBranchMinHeight = 2;
+num sideBranchMaxHeight = length-10;
+str sideBranchLeafStructure = "red_mushroom_side_branch";
+
+// tree trunk
+for(num h = 0; h <= length; h = h + 1) {
+    // light_blueuce radius inversely to length
+    num r = (trunkRadius/length * -h/2) + trunkRadius;
+
+    // Generate sphere at each point
+    for(num x = -r; x <= r; x = x + 1) {
+        for(num y = -r; y <= r; y = y + 1) {
+            for(num z = -r; z <= r; z = z + 1) {
+                if (pow(x,2)+pow(y,2)+pow(z,2) < pow(r,2)) {
+                    setBlock = trunkBlock;
+                    if (randomInt(2) == 0) setBlock = altTrunkBlock;
+                    block(x + xTranslate, h + y - trunkRadius, z + zTranslate, setBlock, false);                  
+                }
+            }
+        }
+    }
+
+    if (h > sideBranchMinHeight && h < sideBranchMaxHeight) {
+        if (h % sideBranchInterval == 0) {
+            // Generate branch
+            structure(0, h, 0, sideBranchLeafStructure, "NONE");
+        }
+    }
+
+}
+
+num topBranches = 10;
+num yTranslate = -5;
+
+for (num a = 0; a < topBranches; a = a + 1) {
+
+    num branchLength = trunkRadius*1.5;
+    
+    num droop = -0.03;
+    num verticalDirection = -0.5-randomInt(randPrecision)/randPrecision;
+    num angle = randomInt(randPrecision)/randPrecision*2*pi;
+
+    // Branch direction vector
+    num dx = sin(angle);
+    num dy = verticalDirection;
+    num dz = cos(angle);
+    // Normalize vector
+    num mag = sqrt(pow(dx,2)+pow(dy,2)+pow(dz,2));
+    dx = dx/mag;
+    dy = dy/mag;
+    dz = dz/mag;
+
+    for (num l = 0; l <= branchLength; l = l + 0.1) {
+
+        num cx = l*dx;
+        num cy = l*dy;
+        num cz = l*dz;
+
+        block(cx, cy+yTranslate+length, cz, "minecraft:mushroom_stem", true);             
+                
+        // Point vector down more
+        dy = dy - droop;
+        // Normalize vector
+        mag = sqrt(pow2(dx)+pow2(dy)+pow2(dz));
+        dx = dx/mag;
+        dy = dy/mag;
+        dz = dz/mag;
+    }
+
+    angle = angle + goldenAngle;
+}
+
+num capRadius = trunkRadius*2;
+
+str mainBlock = "minecraft:red_mushroom_block";
+str altBlock = mainBlock;
+
+for (num x = -capRadius; x < capRadius; x = x + 1) {
+    for (num y = -capRadius; y < capRadius+1; y = y + 1) {
+        for (num z = -capRadius; z < capRadius; z = z + 1) {
+            // First if statement determines the outside border of buble
+            // Second if statement determines the inside border of buble
+
+            if (pow(x,2)+pow(y,2)+pow(z,2) < pow(capRadius,2) &&
+            pow(x,2)+pow(y,2)+pow(z,2) > ((pow(capRadius,2))/2)  &&
+            y > -capRadius/3) {
+                
+                block(x, y+yTranslate+length, z, mainBlock, true);
+            }
+        }   
+    }   
+}

@@ -4,7 +4,20 @@ extends: [ CAVE, BASE ]
 vanilla: minecraft:dripstone_caves
 color: $biomes/substratum_cave_colors.yml:MUSHROOM_CAVES
 
+colors:
+  grass: 0x9c734d
+  foliage: 0x9c734d
+
 palette:
   - MUSHROOM_CAVES: 319
   - MUSHROOM_CAVES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
   - << substratum_meta.yml:palette-bedrock
+
+features:
+  trees:
+    - GIANT_RED_MUSHROOMS
+    - GIANT_BROWN_MUSHROOMS
+  flora:
+    - SMALL_CAVE_MUSHROOMS
+    - CAVE_GRASS
+    - HANGING_ROOTS

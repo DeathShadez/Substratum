@@ -11,10 +11,13 @@ distributor:
 locator:
   type: AND
   locators:
-    - type: SURFACE
+    - type: PATTERN
       range: &range
         min: -16
         max: 319
+      pattern:
+        type: MATCH_AIR
+        offset: 0
     - type: PATTERN
       range: *range
       pattern:
