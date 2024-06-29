@@ -10,5 +10,7 @@ palette:
   - << substratum_meta.yml:palette-bedrock
 
 features:
+  landforms:
+    - GIANT_AMETHYST_BUDS
   flora: 
     - AMETHYST_BUDS
