@@ -27,8 +27,8 @@ carving:
       pillarStrength: 0.5
       pillarRadius: 0.02
     
-      megaCaveStrength: 0.3
-      megaCaveSize: 0.3
+      megaCaveStrength: 0.5
+      megaCaveSize: 0.8
 
     expression: |
       -carvingThreshold

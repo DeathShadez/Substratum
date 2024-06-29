@@ -28,14 +28,22 @@ biome-distribution:
   # increase that scale to 2, that biome will generate 600 blocks wide.
   # Default: 1
 
+  substratum-carving-max: 300
+  # Controls max height of substratum cave biome generation
+  # Substratum Default: 300
+
+  substratum-carving-min: -59
+  # Controls max height of substratum cave biome generation
+  # Substratum Default: -59
+
   cave-biome-max: 300
   # Controls max height of substratum cave biome generation
   # Substratum Default: 300
   # OverworldConfig 1.0 Default: 48
 
-  cave-biome-min: -16
+  cave-biome-min: -59
   # Controls min height of substratum cave biome generation
-  # Substratum Default: -16
+  # Substratum Default: -59
   # OverworldConfig 1.0 Default: -16
 
 # Misc global config stuff
