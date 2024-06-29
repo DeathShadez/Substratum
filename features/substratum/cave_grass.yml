@@ -22,7 +22,7 @@ locator:
       range: *range
       pattern:
         type: MATCH_SET
-        blocks: $features/vegetation/meta.yml:plantable-blocks
+        blocks: $features/substratum/vegetation/substratum_meta.yml:plantable-blocks
         offset: -1
 
 structures:

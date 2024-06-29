@@ -1,0 +1,25 @@
+num randPrecision = 100;
+
+num checkRadius = 16;
+num dirInterval = 0.1;
+num maxDegree = 6;
+str setBlock = "minecraft:water";
+
+bool valid = true;
+
+for (num direction = 0; direction < 7; direction = direction + dirInterval) {
+    for (num i = 0; i < checkRadius; i = i + 1) {
+
+        if (getBlock((i)*cos(direction),0,(i)*sin(direction)) != "minecraft:air" &&
+        getBlock((i)*cos(direction),0,(i)*sin(direction)) != "minecraft:water") {
+            valid = true;
+            break;
+        }
+
+        valid = false;
+    }
+
+    if (valid == false) fail;
+}
+
+block(0, 0, 0, "minecraft:air", true);

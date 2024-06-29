@@ -1,0 +1,22 @@
+id: PLACE_VALID_AIR
+type: FEATURE
+
+distributor:
+  type: "YES"
+
+locator:
+  type: PATTERN
+  range: &range
+    min: -16
+    max: 319
+  pattern:
+    type: MATCH
+    block: minecraft:water
+    offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: place_valid_air
+
+  

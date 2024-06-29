@@ -1,18 +1,18 @@
-id: CORAL_PLANTS
+id: CAVE_DENDRIFORM_REEF
 type: FEATURE
 
 distributor:
   type: SAMPLER
   sampler:
     type: POSITIVE_WHITE_NOISE
-    salt: 6485
-  threshold: 0.8
+    salt: 3457
+  threshold: 0.6
 
 locator:
   type: PATTERN
   range:
-    min: 0
-    max: 60
+    min: -16
+    max: 319
   pattern:
     type: AND
     patterns:
@@ -20,7 +20,7 @@ locator:
         block: minecraft:water
         offset: 0
       - type: MATCH_SET
-        blocks: $features/vegetation/meta.yml:aquatic-plantable-blocks
+        blocks: $features/substratum/vegetation/substratum_meta.yml:aquatic-plantable-blocks
         offset: -1
 
 structures:
@@ -31,6 +31,8 @@ structures:
       type: GAUSSIAN
     sampler:
       type: OPEN_SIMPLEX_2
-      frequency: 0.04
-    salt: 6922
-  structures: coral_plants
+      frequency: 0.03
+    salt: 2565
+  structures:
+    - cave_dendriform_coral_procedural: 1
+    - blank: 8

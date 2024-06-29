@@ -1,0 +1,21 @@
+id: PLACE_WATER
+type: FEATURE
+
+distributor:
+  type: "YES"
+
+locator:
+  type: PATTERN
+  range: &range
+    min: -16
+    max: 319
+  pattern:
+    type: MATCH_AIR
+    offset: 0
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: place_water
+
+  

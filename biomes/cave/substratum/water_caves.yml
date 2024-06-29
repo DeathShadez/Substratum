@@ -11,9 +11,18 @@ palette:
 
 features:
   preprocessors:
+    - PLACE_WATER
+  landforms:
+    - PLACE_VALID_AIR
+  flora:
+    - CAVE_CORAL_FANS
+    - CAVE_CORAL_WALL_FANS
+    - CAVE_SEA_PICKLES
+    - CAVE_CORAL_PLANTS
+    - CAVE_DENDRIFORM_REEF
+    - CAVE_BALL_REEF
+    - CAVE_SEAGRASS
+    - CAVE_KELP
+  postprocessors:
     - WATER_POOLS
     - WATER_COLUMNS
-  flora:
-    - CORAL_FANS
-    - SEA_PICKLES
-    - CORAL_PLANTS

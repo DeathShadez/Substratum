@@ -1,0 +1,14 @@
+num checkHeight = 30;
+
+bool valid = false;
+
+for (num y = 0; y < checkHeight; y = y + 1) {
+    if (getBlock(0,-y,0) != "minecraft:air") {
+        valid = true;
+        break;
+    }
+}
+
+if (!valid) fail;
+
+block(0, 0, 0, "minecraft:water", false, true);

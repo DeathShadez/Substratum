@@ -1,18 +1,18 @@
-id: SEA_PICKLES
+id: CAVE_KELP
 type: FEATURE
 
 distributor:
   type: SAMPLER
   sampler:
     type: POSITIVE_WHITE_NOISE
-    salt: 1596
+    salt: 7234
   threshold: 0.8
 
 locator:
   type: PATTERN
   range:
-    min: 0
-    max: 280
+    min: -16
+    max: 319
   pattern:
     type: AND
     patterns:
@@ -20,7 +20,7 @@ locator:
         block: minecraft:water
         offset: 0
       - type: MATCH_SET
-        blocks: $features/vegetation/meta.yml:aquatic-plantable-blocks
+        blocks: $features/substratum/vegetation/substratum_meta.yml:aquatic-plantable-blocks
         offset: -1
 
 structures:
@@ -31,6 +31,9 @@ structures:
       type: GAUSSIAN
     sampler:
       type: OPEN_SIMPLEX_2
-      frequency: 0.04
-    salt: 1232
-  structures: sea_pickle
+      frequency: 0.03
+    salt: 6922
+  structures:
+    - cave_kelp: 1
+    - cave_kelp_low: 2
+    - blank: 7

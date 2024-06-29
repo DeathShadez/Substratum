@@ -1,0 +1,38 @@
+id: CAVE_BALL_REEF
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 6578
+  threshold: 0.6
+
+locator:
+  type: PATTERN
+  range:
+    min: -16
+    max: 319
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH
+        block: minecraft:water
+        offset: 0
+      - type: MATCH_SET
+        blocks: $features/substratum/vegetation/substratum_meta.yml:aquatic-plantable-blocks
+        offset: -1
+
+structures:
+  distribution:
+    type: DOMAIN_WARP
+    amplitude: 3
+    warp:
+      type: GAUSSIAN
+    sampler:
+      type: OPEN_SIMPLEX_2
+      frequency: 0.03
+    salt: 9652
+  structures:
+    - cave_ball_coral_procedural: 1
+    - blank: 8
