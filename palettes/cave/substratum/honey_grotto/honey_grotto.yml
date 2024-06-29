@@ -3,7 +3,7 @@ type: PALETTE
 
 layers:
   - materials:
-      - minecraft:stone: 2
+      - minecraft:stone: 1
       - minecraft:yellow_terracotta: 2
       - minecraft:moss_block: 2
       - minecraft:yellow_concrete: 3
