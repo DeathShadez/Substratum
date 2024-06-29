@@ -1,14 +1,23 @@
-num checkHeight = 30;
+num checkHeightMin = 30;
+num checkHeightMax = 10;
 
-bool valid = false;
+bool topValid = false;
+bool botValid = false;
 
-for (num y = 0; y < checkHeight; y = y + 1) {
+for (num y = 0; y < checkHeightMin; y = y + 1) {
     if (getBlock(0,-y,0) != "minecraft:air") {
-        valid = true;
+        botValid = true;
         break;
     }
 }
 
-if (!valid) fail;
+for (num h = 0; h < checkHeightMax; h = h + 1) {
+    if (getBlock(0,h,0) != "minecraft:air") {
+        topValid = true;
+        break;
+    }
+}
+
+if (!botValid || !botValid) fail;
 
 block(0, 0, 0, "minecraft:water", false, true);

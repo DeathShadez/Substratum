@@ -23,6 +23,3 @@ features:
     - CAVE_BALL_REEF
     - CAVE_SEAGRASS
     - CAVE_KELP
-  postprocessors:
-    - WATER_POOLS
-    - WATER_COLUMNS
