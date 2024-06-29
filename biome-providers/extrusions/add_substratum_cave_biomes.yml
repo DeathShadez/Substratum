@@ -17,7 +17,7 @@ extrusions:
       - MARBLE_MINES: 1
       - AMETHYST_CAVES: 1
       - FROZEN_CAVERNS: 1
-      - MUSHROOM_CAVES: 1
+      - FUNGAL_UNDERGROWTH: 1
       - WATER_CAVES: 1
     range:
       min: ${substratum_meta.yml:biome-distribution.cave-biome-min}

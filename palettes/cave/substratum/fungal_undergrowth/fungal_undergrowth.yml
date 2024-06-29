@@ -1,9 +1,9 @@
-id: MUSHROOM_CAVES_DEEPSLATE
+id: FUNGAL_UNDERGROWTH
 type: PALETTE
 
 layers:
   - materials:
-      - minecraft:deepslate: 1
+      - minecraft:stone: 1
       - minecraft:coarse_dirt: 2
       - minecraft:rooted_dirt: 2
       - minecraft:brown_concrete_powder: 1
@@ -19,7 +19,7 @@ layers:
       - minecraft:brown_concrete_powder: 1
     layers: 1
   - materials:
-      - minecraft:deepslate: 7
+      - minecraft:stone: 7
       - minecraft:coarse_dirt: 2
       - minecraft:rooted_dirt: 2
       - minecraft:brown_concrete_powder: 1
