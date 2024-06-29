@@ -17,7 +17,7 @@ Download the Substratum pack from the [releases page](https://github.com/DeathSh
 or from the main Substratum branch for changes that haven't been applied to the latest release yet.
 
 ### Read the *World Installation* section if you want a typical fully underground Substratum world. 
-### Otherwise skip ahead to the *Drop-In Merge Installation* section for add Substratum caves to other packs. 
+### Otherwise skip ahead to the *Drop-In Merge Installation* section for adding Substratum caves to other packs. 
 
 ## World Installation
 Follow this [installation guide](https://terra.polydev.org/install/index.html) for your particular platform.
