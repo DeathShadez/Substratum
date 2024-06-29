@@ -1,6 +1,6 @@
 id: MOLTEN_PASSAGES
 type: BIOME
-extends: [ BASE, FLAT_CAVE ]
+extends: [ BASE, CAVE ]
 vanilla: minecraft:dripstone_caves
 color: $biomes/substratum_cave_colors.yml:MOLTEN_PASSAGES
 
