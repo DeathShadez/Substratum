@@ -11,6 +11,7 @@ Part of this pack uses resources from these packs:
 ## POSSIBLE ISSUES
 - Might spawn players at the top bedrock layer depending on how world is generated
 - Players might spawn and suffocate upon initial spawn
+- Coral Coves is disabled by default. Be warned that coral coves is messy with its borders and doesn't work too well when merged with other packs.
 
 ## Installation
 Download the Substratum pack from the [releases page](https://github.com/DeathShadez/Substratum/releases) for a reliable pack version 
