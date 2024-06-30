@@ -1,7 +1,7 @@
 id: CAVE
 abstract: true
 type: BIOME
-extends: [ CARVING_DEFAULT ]
+extends: [ CARVING_SUBSTRATUM ]
 
 carving:
   update-palette: true

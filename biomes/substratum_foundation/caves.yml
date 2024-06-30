@@ -4,16 +4,15 @@ extends: [ BASE, CAVE ]
 vanilla: minecraft:windswept_hills
 color: $biomes/substratum_cave_colors.yml:CAVES
 
+tags:
+  - LAND_CAVES
+
+terrain:
+  sampler:
+    type: LINEAR_HEIGHTMAP
+    base: 319
+
 palette:
   - << substratum_meta.yml:palette-top
   - BLOCK:minecraft:stone: 316
   - << substratum_meta.yml:palette-bottom
-
-tags:
-  - LAND_CAVES
-
-colors:
-  grass: 0x91bd59
-  foliage: 0x77ab2f
-  water: 0x44aff5
-  water-fog: 0x44aff5
