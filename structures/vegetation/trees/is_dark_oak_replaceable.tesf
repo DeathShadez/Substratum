@@ -1,6 +1,0 @@
-str blockID = getBlock(0, 0, 0);
-if (blockID != "minecraft:air" &&
-    blockID != "minecraft:dark_oak_leaves" &&
-    blockID != "minecraft:dark_oak_log") {
-    fail;
-}

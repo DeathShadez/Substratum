@@ -1,6 +1,0 @@
-id: DIORITE_SLABS
-type: FEATURE
-extends: SLABS
-
-structures:
-  structures: diorite_slabs

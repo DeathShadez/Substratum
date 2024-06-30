@@ -1,6 +1,0 @@
-id: SAND_SLABS
-type: FEATURE
-extends: SLABS
-
-structures:
-  structures: sand_slabs

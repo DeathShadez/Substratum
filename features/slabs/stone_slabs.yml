@@ -1,6 +1,0 @@
-id: STONE_SLABS
-type: FEATURE
-extends: SLABS
-
-structures:
-  structures: stone_slabs

@@ -17,9 +17,6 @@ features:
     - UNDERGROUND_LAVA_COLUMNS
     - CAVE_GLOW_LICHEN
     - TEXTURED_STONE_SLANT
-  underwater-flora:
-    - KELP
-    - SEAGRASS
 
 
 

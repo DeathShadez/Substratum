@@ -11,7 +11,7 @@ distributor:
 locator:
   type: PATTERN
   range:
-    min: 60
+    min: -64
     max: 319
   pattern:
     type: OR
