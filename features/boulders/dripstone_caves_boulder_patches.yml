@@ -20,8 +20,8 @@ distributor:
 locator:
   type: SURFACE
   range:
-    min: -16
-    max: 48
+    min: -64
+    max: 319
 
 structures:
   distribution:
