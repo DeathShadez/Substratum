@@ -1,11 +1,11 @@
-id: GIANT_AMETHYST_BUDS
+id: CEILING_GIANT_AMETHYST_BUDS
 type: FEATURE
 
 distributor:
   type: PADDED_GRID
   width: 16
   padding: 11
-  salt: 4357
+  salt: 3246
 
 locator:
   type: AND
@@ -21,31 +21,36 @@ locator:
       range: *range
       pattern:
         type: MATCH_AIR
-        offset: 3
+        offset: -3
     - type: PATTERN
       range: *range
       pattern:
         type: MATCH_AIR
-        offset: 5
+        offset: -5
     - type: PATTERN
       range: *range
       pattern:
         type: MATCH_SOLID
-        offset: -1
+        offset: 1
     - type: PATTERN
       range: *range
       pattern:
         type: MATCH_SOLID
-        offset: -3
+        offset: 3
     - type: ADJACENT_PATTERN
       range: *range
       pattern:
         type: MATCH_SOLID
-        offset: -1
+        offset: 1
+    - type: ADJACENT_PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SOLID
+        offset: 3
     
     
 
 structures:
   distribution:
     type: CONSTANT
-  structures: giant_amethyst_bud
+  structures: ceiling_giant_amethyst_bud

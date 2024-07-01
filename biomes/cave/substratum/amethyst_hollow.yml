@@ -11,6 +11,8 @@ palette:
 
 features:
   landforms:
-    - GIANT_AMETHYST_BUDS
+    - GROUND_GIANT_AMETHYST_BUDS
+    - CEILING_GIANT_AMETHYST_BUDS
+    - WALL_GIANT_AMETHYST_BUDS
   flora: 
     - AMETHYST_BUDS

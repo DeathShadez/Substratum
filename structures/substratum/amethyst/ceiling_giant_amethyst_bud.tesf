@@ -1,0 +1,82 @@
+if (true) {
+    if (getBlock(3,2,0) == "minecraft:air") fail;
+    if (getBlock(-3,2,0) == "minecraft:air") fail;
+    if (getBlock(0,2,3) == "minecraft:air") fail;
+    if (getBlock(0,2,-3) == "minecraft:air") fail;
+}
+
+num randPrecision = 100;
+
+str setBlock = "minecraft:amethyst_block";
+num sideSpikeAmount = 5;
+
+num length = 15 + randomInt(randPrecision)/randPrecision*5;
+num radius = 2 + randomInt(randPrecision)/randPrecision;
+
+// Direction vector
+num dx = 0;
+num dy = -1;
+num dz = 0;
+
+// Normalize vector
+num mag = sqrt(pow(dx,2)+pow(dy,2)+pow(dz,2));
+dx = dx/mag;
+dy = dy/mag;
+dz = dz/mag;
+
+for(num l = 0; l <= length; l = l + 1) {
+
+    // Reduce radius inversely to length
+    num r = (radius/length * -l) + radius;
+
+    // Generate sphere at each point
+    for(num x = -r; x <= r; x = x + 1) {
+        for(num y = -r; y <= r; y = y + 1) {
+            for(num z = -r; z <= r; z = z + 1) {
+                if (pow(x,2)+pow(y,2)+pow(z,2) < pow(r,2)) {
+                    
+                    setBlock = "minecraft:amethyst_block";
+                    if (randomInt(5) == 0) setBlock = "minecraft:budding_amethyst";
+                    block(l*dx + x, l*dy + y + radius, l*dz + z, setBlock, false);
+                }
+            }
+        }
+    }
+}
+
+for (num a = 0; a < sideSpikeAmount; a = a + 1) {
+    length = 10 + randomInt(randPrecision)/randPrecision*3;
+    radius = 1.5 + randomInt(randPrecision)/randPrecision;
+
+    // Direction vector
+    dx = (randomInt(randPrecision)/randPrecision-0.5);
+    dy = -0.15;
+    dz = (randomInt(randPrecision)/randPrecision-0.5);
+
+    // Normalize vector
+    mag = sqrt(pow(dx,2)+pow(dy,2)+pow(dz,2));
+    dx = dx/mag;
+    dy = dy/mag;
+    dz = dz/mag;
+
+    for(num l = 0; l <= length; l = l + 1) {
+
+        // Reduce radius inversely to length
+        num r = (radius/length * -l) + radius;
+
+        // Generate sphere at each point
+        for(num x = -r; x <= r; x = x + 1) {
+            for(num y = -r; y <= r; y = y + 1) {
+                for(num z = -r; z <= r; z = z + 1) {
+                    if (pow(x,2)+pow(y,2)+pow(z,2) < pow(r,2)) {
+
+                        setBlock = "minecraft:amethyst_block";
+                        if (randomInt(10) == 0) setBlock = "minecraft:budding_amethyst";
+                        block(l*dx + x, l*dy + y + radius, l*dz + z, setBlock, false);
+                    }
+                }
+            }
+        }
+    }
+}
+

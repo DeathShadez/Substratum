@@ -1,0 +1,114 @@
+num randPrecision = 100;
+
+str dir = "";
+num xDir = 0;
+num zDir = 0;
+
+if (getBlock(-2,3,2) != "minecraft:air" &&
+getBlock(-2,3,-2) != "minecraft:air" &&
+getBlock(-2,-3,2) != "minecraft:air" &&
+getBlock(-2,-3,-2) != "minecraft:air") {
+    dir = "east";
+    xDir = 1;
+    zDir = 0;
+} else if (getBlock(2,3,2) != "minecraft:air" &&
+getBlock(2,3,-2) != "minecraft:air" &&
+getBlock(2,-3,2) != "minecraft:air" &&
+getBlock(2,-3,-2) != "minecraft:air") {
+    dir = "west";
+    xDir = -1;
+    zDir = 0;
+} else if (getBlock(2,3,-2) != "minecraft:air" &&
+getBlock(-2,3,-2) != "minecraft:air" &&
+getBlock(2,-3,-2) != "minecraft:air" &&
+getBlock(-2,-3,-2) != "minecraft:air") {
+    dir = "south";
+    xDir = 0;
+    zDir = 1;
+} else if (getBlock(2,3,2) != "minecraft:air" &&
+getBlock(-2,3,2) != "minecraft:air" &&
+getBlock(2,-3,2) != "minecraft:air" &&
+getBlock(-2,-3,2) != "minecraft:air") {
+    dir = "north";
+    xDir = 0;
+    zDir = -1;
+} else fail;
+
+str setBlock = "minecraft:amethyst_block";
+num sideSpikeAamount = 5;
+
+num length = 15 + randomInt(randPrecision)/randPrecision*5;
+num radius = 2 + randomInt(randPrecision)/randPrecision;
+
+// Direction vector
+num dx = xDir;
+num dy = 0;
+num dz = zDir;
+
+// Normalize vector
+num mag = sqrt(pow(dx,2)+pow(dy,2)+pow(dz,2));
+dx = dx/mag;
+dy = dy/mag;
+dz = dz/mag;
+
+for(num l = 0; l <= length; l = l + 1) {
+
+    // Reduce radius inversely to length
+    num r = (radius/length * -l) + radius;
+
+    // Generate sphere at each point
+    for(num x = -r; x <= r; x = x + 1) {
+        for(num y = -r; y <= r; y = y + 1) {
+            for(num z = -r; z <= r; z = z + 1) {
+                if (pow(x,2)+pow(y,2)+pow(z,2) < pow(r,2)) {
+                    
+                    setBlock = "minecraft:amethyst_block";
+                    if (randomInt(5) == 0) setBlock = "minecraft:budding_amethyst";
+                    block(l*dx + x, l*dy + y , l*dz + z, setBlock, false);
+                }
+            }
+        }
+    }
+}
+
+for (num a = 0; a < sideSpikeAamount; a = a + 1) {
+    length = 10 + randomInt(randPrecision)/randPrecision*3;
+    radius = 1.5 + randomInt(randPrecision)/randPrecision;
+
+    // Direction vector
+    dx = (randomInt(randPrecision)/randPrecision-0.5);
+    dy = (randomInt(randPrecision)/randPrecision-0.5);
+    dz = (randomInt(randPrecision)/randPrecision-0.5);
+
+    if (dir == "east") dx = 0.15;
+    if (dir == "west") dx = -0.15;
+    if (dir == "south") dz = 0.15;
+    if (dir == "north") dz = -0.15;
+
+    // Normalize vector
+    mag = sqrt(pow(dx,2)+pow(dy,2)+pow(dz,2));
+    dx = dx/mag;
+    dy = dy/mag;
+    dz = dz/mag;
+
+    for(num l = 0; l <= length; l = l + 1) {
+
+        // Reduce radius inversely to length
+        num r = (radius/length * -l) + radius;
+
+        // Generate sphere at each point
+        for(num x = -r; x <= r; x = x + 1) {
+            for(num y = -r; y <= r; y = y + 1) {
+                for(num z = -r; z <= r; z = z + 1) {
+                    if (pow(x,2)+pow(y,2)+pow(z,2) < pow(r,2)) {
+
+                        setBlock = "minecraft:amethyst_block";
+                        if (randomInt(10) == 0) setBlock = "minecraft:budding_amethyst";
+                        block(l*dx + x, l*dy + y, l*dz + z, setBlock, false);
+                    }
+                }
+            }
+        }
+    }
+}
+
