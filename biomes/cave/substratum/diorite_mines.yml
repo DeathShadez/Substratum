@@ -1,0 +1,10 @@
+id: DIORITE_MINES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/substratum_cave_colors.yml:DIORITE_MINES
+
+palette:
+  - DIORITE_MINES: 319
+  - DIORITE_MINES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - << substratum_meta.yml:palette-bedrock
