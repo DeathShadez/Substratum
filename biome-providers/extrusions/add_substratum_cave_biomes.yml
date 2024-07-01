@@ -20,6 +20,7 @@ extrusions:
       - FUNGAL_UNDERGROWTH: 1
       #- CORAL_COVES: 1
       - GRANITE_MINES: 1
+      - ANDESITE_MINES: 1
     range:
       min: ${substratum_meta.yml:biome-distribution.cave-biome-min}
       max: ${substratum_meta.yml:biome-distribution.cave-biome-max}

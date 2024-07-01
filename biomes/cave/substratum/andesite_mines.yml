@@ -1,0 +1,10 @@
+id: ANDESITE_MINES
+type: BIOME
+extends: [ CAVE, BASE ]
+vanilla: minecraft:dripstone_caves
+color: $biomes/substratum_cave_colors.yml:ANDESITE_MINES
+
+palette:
+  - ANDESITE_MINES: 319
+  - ANDESITE_MINES_DEEPSLATE: $substratum_meta.yml:strata.deepslate.top
+  - << substratum_meta.yml:palette-bedrock
