@@ -13,7 +13,7 @@ locator:
   locators:
     - type: PATTERN
       range: &range
-        min: -32
+        min: -64
         max: 319
       pattern:
         type: MATCH_SOLID
