@@ -11,13 +11,14 @@ Part of this pack uses resources from these packs:
 ## POSSIBLE ISSUES
 - Might spawn players at the top bedrock layer depending on how world is generated
 - Players might spawn and suffocate upon initial spawn
+- Coral Coves is disabled by default. Be warned that coral coves is messy with its borders and doesn't work too well when merged with other packs.
 
 ## Installation
 Download the Substratum pack from the [releases page](https://github.com/DeathShadez/Substratum/releases) for a reliable pack version 
 or from the main Substratum branch for changes that haven't been applied to the latest release yet.
 
 ### Read the *World Installation* section if you want a typical fully underground Substratum world. 
-### Otherwise skip ahead to the *Drop-In Merge Installation* section for add Substratum caves to other packs. 
+### Otherwise skip ahead to the *Drop-In Merge Installation* section for adding Substratum caves to other packs. 
 
 ## World Installation
 Follow this [installation guide](https://terra.polydev.org/install/index.html) for your particular platform.
