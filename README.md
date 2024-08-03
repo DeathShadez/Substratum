@@ -1,5 +1,5 @@
 # Substratum
-![substratum](https://github.com/DeathShadez/Substratum/assets/51402617/6774bb7a-f23a-47e8-aa32-d88870293da9)
+![substratum](https://github.com/user-attachments/assets/ba73e713-d793-428f-a0fb-acad97912591)
 
 
 A Terra pack that creates a completely underground world with several unique caves to explore within.
