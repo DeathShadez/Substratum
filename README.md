@@ -44,8 +44,7 @@ worlds:
 ## Drop-In Merge Installation
 If you want to add Substratum's cave biomes to a pack, *please follow the steps below closely*.
 
-1. Copy all of Substratum's content over to the desired pack 
-##### Substratum content being *EVERYTHING* including the folders and the pack.yml.
+1. Copy over **EVERY** file in Substratum over to the desired pack 
 
 2. Ensure that duplicate files are ignored and skipped
 
